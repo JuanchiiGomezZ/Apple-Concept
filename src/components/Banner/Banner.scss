@@ -1,0 +1,68 @@
+.banner {
+  background-color: #fbfbfd;
+  .bannerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    img {
+      max-height: 100vh;
+      margin-left: 50px;
+      margin-top: 41px;
+    }
+    .bannerText {
+        margin-right: 50px;
+      .new {
+        color: #bf4800;
+        font-family: $font-text-light;
+        font-size: 16px;
+      }
+      .iphoneSE {
+        font-family: $font-display;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 13px;
+        .SE{
+            font-size: 14px;
+            display: inline-flex;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 2px;
+            text-align: center;
+        }
+      }
+      .loveThe {
+        font-family: $font-display;
+        font-size: 40px;
+        color: #2948b1;
+      }
+      button {
+        background-color: #0071e3;
+        color: white;
+        font-family: $font-text-regular;
+        padding: 8px 16px;
+        border-radius: 90px;
+        font-size: 18px;
+        border: none;
+        margin: 20px 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .bannerContainer {
+    flex-direction: column;
+    img{
+        margin: 0 !important;
+        max-width: 100%;
+    }
+    .bannerText{
+        margin-right: 0 !important;
+        margin-top: 50px;
+    }
+  }
+}
