@@ -1,14 +1,14 @@
-
 /* Components */
 import NavBar from './components/NavBar/NavBar';
-
-/* Fonts */
-
+import Footer from './components/Footer/Footer'
 
 
-function App() {
+const App = () => {
   return (
-    <NavBar/>
+    <>
+      <NavBar/>
+      <Footer/>
+    </>
   );
 }
 
