@@ -1,12 +1,14 @@
 /* Components */
 import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer'
+import Banner from './components/Banner/Banner';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
   return (
     <>
       <NavBar/>
+      <Banner/>
       <Footer/>
     </>
   );
