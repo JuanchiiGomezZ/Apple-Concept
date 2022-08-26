@@ -12,7 +12,7 @@ header {
     align-items: center;
     margin: 0 auto;
     i{
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       cursor: pointer;
       &:hover{
         color: $font-white-color;
@@ -38,6 +38,25 @@ header {
           }
       }
     }
+    .cart{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      img{
+        height: 22px;  
+      }
+      p{
+        font-size: 11px;
+        color:$bg-navBar ;
+        background-color: $font-gray-color;
+        padding: 1px 4px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 6px;
+        margin-left: 10px;
+      }
+    }
+     
   }
 }
 
@@ -46,7 +65,7 @@ header {
 header{
   .nav{
     .headerSections{
-      i{
+      .desktop{
         display: none;
       }
     }
