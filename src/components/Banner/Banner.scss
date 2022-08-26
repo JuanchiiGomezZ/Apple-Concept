@@ -1,4 +1,8 @@
-.banner {
+
+
+
+
+.banners {
   background-color: #fbfbfd;
   .bannerContainer {
     display: flex;
@@ -51,9 +55,59 @@
       }
     }
   }
+
+  .squares{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .sq1{
+      width: 45vw;
+      height: 30vw;
+      margin: 5px;
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url('https://p4.wallpaperbetter.com/wallpaper/716/636/57/apple-inc-simple-background-hd-wallpaper-preview.jpg');
+      .sq1Text{
+        color: white;
+        text-align: center;
+        margin-top: 50%;
+        h2{
+          font-family: $font-display;
+          font-size: 40px;
+        }
+        p{
+          font-family: $font-text-regular;
+        }
+      }
+    }
+    .sq2{
+      width: 45vw;
+      height: 30vw;
+      margin: 5px;
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url('https://i.blogs.es/1b175d/image/1366_2000.png');
+      .sq2Text{
+        color: white;
+        text-align: center;
+        margin-top: 50%;
+        h2{
+          font-family: $font-display;
+          font-size: 40px;
+        }
+        p{
+          font-family: $font-text-regular;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1000px) {
+ .banners{
   .bannerContainer {
     flex-direction: column;
     img{
@@ -65,4 +119,21 @@
         margin-top: 50px;
     }
   }
+
+  .squares{
+    .sq1{
+      width: 80%;
+      height: auto;
+    }
+    .sq2{
+      width: 80%;
+      height: auto;
+    }
+  }
+ } 
 }
+
+
+
+
+

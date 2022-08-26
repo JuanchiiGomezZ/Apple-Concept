@@ -15,3 +15,5 @@ const App = () => {
 }
 
 export default App;
+
+/* "homepage": "https://<Github Username>.github.io" */
