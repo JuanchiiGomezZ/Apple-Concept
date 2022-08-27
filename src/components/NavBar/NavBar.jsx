@@ -8,6 +8,7 @@ const NavBar = () => {
         <i class="fa-brands fa-apple"></i>
         <div className="headerSections">
           <div className="sections">
+            <a href="##">Home</a>
             <a href="##">Store</a>
             <a href="##">Services</a>
             <a href="##">Support</a>

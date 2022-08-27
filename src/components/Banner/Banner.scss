@@ -1,7 +1,3 @@
-
-
-
-
 .banners {
   background-color: #fbfbfd;
   .bannerContainer {
@@ -17,7 +13,7 @@
       margin-top: 41px;
     }
     .bannerText {
-        margin-right: 50px;
+      margin-right: 50px;
       .new {
         color: #bf4800;
         font-family: $font-text-light;
@@ -28,13 +24,13 @@
         font-weight: bold;
         font-size: 20px;
         margin-bottom: 13px;
-        .SE{
-            font-size: 14px;
-            display: inline-flex;
-            border: 2px solid black;
-            border-radius: 5px;
-            padding: 2px;
-            text-align: center;
+        .SE {
+          font-size: 14px;
+          display: inline-flex;
+          border: 2px solid black;
+          border-radius: 5px;
+          padding: 2px;
+          text-align: center;
         }
       }
       .loveThe {
@@ -55,85 +51,211 @@
       }
     }
   }
-
-  .squares{
+  .squares {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    .sq1{
+    a {
+      text-decoration: none;
+    }
+    .sq1 {
       width: 45vw;
-      height: 30vw;
+      height: 35vw;
       margin: 5px;
-      background-position: center;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url('https://p4.wallpaperbetter.com/wallpaper/716/636/57/apple-inc-simple-background-hd-wallpaper-preview.jpg');
-      .sq1Text{
-        color: white;
+      background-color: white;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 75%;
+        margin-top: 30px;
+      }
+      .sq1Text {
         text-align: center;
-        margin-top: 50%;
-        h2{
+        overflow-y: hidden;
+        h2 {
           font-family: $font-display;
           font-size: 40px;
+          margin: 5px;
         }
-        p{
+        p {
+          font-family: $font-text-light;
+          font-size: 20px;
+          margin: 10px 0;
+        }
+        a {
+          font-size: 18px;
+          margin: 20px;
+          color: #0071e3;
+          text-decoration: none;
           font-family: $font-text-regular;
+          height: auto;
+          padding: 5px;
+          &:hover {
+            font-weight: bold;
+          }
         }
       }
     }
-    .sq2{
+    .sq2 {
       width: 45vw;
-      height: 30vw;
+      height: 35vw;
       margin: 5px;
       background-position: center;
       background-size: cover;
       overflow: hidden;
-      background-image: url('https://i.blogs.es/1b175d/image/1366_2000.png');
-      .sq2Text{
+      background-image: url("https://i.blogs.es/1b175d/image/1366_2000.png");
+      .sq2Text {
         color: white;
         text-align: center;
-        margin-top: 50%;
-        h2{
+        margin-top: 60%;
+        h2 {
           font-family: $font-display;
           font-size: 40px;
         }
-        p{
+        p {
           font-family: $font-text-regular;
+          margin: 8px;
+        }
+        a {
+          font-size: 18px;
+          margin: 20px;
+          color: #0071e3;
+          text-decoration: none;
+          font-family: $font-text-regular;
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .sq3 {
+      width: 45vw;
+      height: 35vw;
+      margin: 5px;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 52%;
+        margin-top: 30px;
+      }
+      .sq3Text {
+        text-align: center;
+        h2 {
+          font-family: $font-display;
+          font-size: 40px;
+          display: inline-flex;
+          margin: 5px;
+        }
+        .ipadAir {
+          color: #7d6dcf;
+        }
+        p {
+          font-family: $font-text-light;
+          font-size: 20px;
+          margin: 10px 0;
+        }
+        a {
+          font-size: 18px;
+          margin: 20px;
+          color: #0071e3;
+          text-decoration: none;
+          font-family: $font-text-regular;
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .sq4 {
+      width: 45vw;
+      height: 35vw;
+      margin: 5px;
+      background-color: white;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      img {
+        width: 55%;
+        margin-top: 10px;
+      }
+      .titleWatch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-display;
+        font-size: 27px;
+        i {
+          font-size: 2.4rem;
+          margin-bottom: 8px;
+          margin-right: 10px;
+        }
+        .watchSE {
+          color: #c91f1f;
+          margin-left: 8px;
+        }
+      }
+      p {
+        font-family: $font-text-light;
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      a {
+        font-size: 18px;
+        margin: 20px;
+        color: #0071e3;
+        text-decoration: none;
+        font-family: $font-text-regular;
+        &:hover {
+          font-weight: bold;
         }
       }
     }
   }
+  
 }
 
 @media (max-width: 1000px) {
- .banners{
-  .bannerContainer {
-    flex-direction: column;
-    img{
+  .banners {
+    .bannerContainer {
+      flex-direction: column;
+      img {
         margin: 0 !important;
         max-width: 100%;
-    }
-    .bannerText{
+      }
+      .bannerText {
         margin-right: 0 !important;
         margin-top: 50px;
+      }
+    }
+    .squares {
+      .sq1 {
+        width: 100%;
+        height: auto;
+      }
+      .sq2 {
+        width: 100%;
+        height: auto;
+      }
+      .sq3 {
+        width: 100%;
+        height: auto;
+      }
+      .sq4 {
+        width: 100%;
+        height: auto;
+      }
     }
   }
-
-  .squares{
-    .sq1{
-      width: 80%;
-      height: auto;
-    }
-    .sq2{
-      width: 80%;
-      height: auto;
-    }
-  }
- } 
 }
-
-
-
-
-

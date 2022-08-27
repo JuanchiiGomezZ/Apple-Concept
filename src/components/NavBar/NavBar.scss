@@ -42,6 +42,7 @@ header {
       display: flex;
       align-items: center;
       cursor: pointer;
+      margin-left: 20px;
       img{
         height: 22px;  
       }
@@ -64,7 +65,11 @@ header {
 @media (max-width:900px){
 header{
   .nav{
+    width: 80%;
     .headerSections{
+      a{
+        margin: 0 12px;
+      }
       .desktop{
         display: none;
       }
@@ -72,19 +77,11 @@ header{
     .mobile{
       display: block;
     }
+    .cart{
+      margin: 0;
+    }
   }
+
 }
 }
 
-@media (max-width:600px){
- header{
-  .nav{
-    width: 80%;
-    .headerSections{
-      a{
-        margin: 0 12px;
-      }
-    }
-  }
- }
-}
