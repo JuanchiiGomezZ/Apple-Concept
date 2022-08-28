@@ -33,7 +33,7 @@ const Banner = () => {
             <a href="##">Learn More</a>
           </div>
         </a>
-        <a className="sq3" href="##">
+        <div className="sq3" href="##">
           <div className="sq3Text">
             <h2>iPad</h2><h2 className="ipadAir">Air</h2>
             <p>Light. Bright. Full of might.</p>
@@ -41,7 +41,7 @@ const Banner = () => {
             <a href="##">Buy</a>
           </div>
           <img src="https://www.apple.com/v/ipad-air/r/images/overview/features/iris__fnhnshkpwl6y_large.jpg" alt="iPadAir" />
-        </a>
+        </div>
         <a className="sq4" href="##">
           <div className="sq4Text">
             <div className="titleWatch">
