@@ -236,13 +236,26 @@
 }
 
 @media (max-width: 1400px){
-
+.banners{
+  .squares{
+    .sq1{
+      img{
+        width: 69%;
+      }
+    }
+    .sq3{
+      img{
+        width: 53%;
+      }
+    }
+    .sq4{
+      img{
+        width: 58%;
+      }
+    }
+  }
 }
-
-
-
-
-
+}
 
 
 @media (max-width: 1000px) {
@@ -262,18 +275,67 @@
       .sq1 {
         width: 100%;
         height: auto;
+        .sq1Text{
+          h2{
+            font-size: 35px;
+          }
+          p{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        }
       }
       .sq2 {
         width: 100%;
         height: auto;
+        .sq2Text{
+          margin-top: 55%;
+          padding-bottom: 20px;
+          h2{
+            font-size: 40px;
+          }
+          p{
+            font-size: 17px;
+          }
+          a{
+            font-size: 20px;
+          }
+        } 
       }
       .sq3 {
         width: 100%;
         height: auto;
+        .sq3Text{
+          h2{
+            font-size: 40px;
+            padding-top: 10px;
+          }
+          p{
+            font-size: 20px;
+          }
+          a{
+            font-size: 18px;
+          }
+        } 
+        
       }
       .sq4 {
         width: 100%;
         height: auto;
+        .sq4Text{
+          .titleWatch{
+            font-size: 30px;
+            padding-top: 10px;
+          }
+          p{
+            font-size: 19px;
+          }
+          a{
+            font-size: 18px;
+          }
+        } 
       }
     }
   }
