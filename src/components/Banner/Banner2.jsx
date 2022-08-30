@@ -31,7 +31,7 @@ const Banner2 = () => {
           <a className="sq4" href="##">
             <div className="sq4Text">
               <div className="titleWatch">
-              <i class="fa-brands fa-apple"></i>
+              <i className="fa-brands fa-apple"></i>
               <h2>Watch</h2><h2 className="watchSE">SE</h2>
               </div>
               <p>Heavy on features. Light on price</p>
