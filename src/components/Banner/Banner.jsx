@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="bannerContainer">
         <div className="bannerText">
           <p className="new">New</p>
-          <p className="iphoneSE">iPhone <p className="SE">SE</p></p>
+          <div className="iphoneSE">iPhone <p className="SE">SE</p></div>
           <h2 className="loveThe">Love the power.</h2>
           <h2 className="loveThe">Love the price.</h2>
           <button>Buy</button>

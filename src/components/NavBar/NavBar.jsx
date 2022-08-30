@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <header>
       <div className="nav">
-        <i class="fa-brands fa-apple"></i>
+        <i className="fa-brands fa-apple"></i>
         <div className="headerSections">
           <div className="sections">
             <a href="##">Home</a>

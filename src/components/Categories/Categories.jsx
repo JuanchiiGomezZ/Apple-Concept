@@ -28,9 +28,9 @@ const Categories = () => {
     <div className="categories">
       <h1>Our Products.</h1>
       <div className="categoriesContainer">
-        {categoriesData.map((category) => {
+        {categoriesData.map((category, i) => {
           return (
-            <a href ="##" className="category">
+            <a key={i} href ="##" className="category">
               <img src={category.img} alt={category.name} />
               <p>{category.name}</p>
             </a>
