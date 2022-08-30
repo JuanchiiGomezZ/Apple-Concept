@@ -5,6 +5,7 @@ header {
   padding: 10px 0;
   width: 100%;
   position: fixed;
+  z-index: 10;
   .nav {
     width: 60%;
     display: flex;
@@ -80,7 +81,6 @@ header{
       margin: 0;
     }
   }
-
 }
 }
 

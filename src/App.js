@@ -1,7 +1,9 @@
 /* Components */
 import NavBar from './components/NavBar/NavBar';
 import CartContainer from './components/NavBar/CartContainer';
+import Categories from './components/Categories/Categories';
 import Banner from './components/Banner/Banner';
+import Banner2 from './components/Banner/Banner2';
 import Footer from './components/Footer/Footer';
 
 
@@ -11,6 +13,8 @@ const App = () => {
       <NavBar/>
       <CartContainer/>
       <Banner/>
+      <Categories/>
+      <Banner2/>
       <Footer/>
     </>
   );
@@ -18,4 +22,3 @@ const App = () => {
 
 export default App;
 
-/* "homepage": "https://<Github Username>.github.io" */

@@ -2,7 +2,7 @@ import React from "react";
 
 const CartContainer = () => {
   return (
-    <div className="cartContainer">
+    <div className="cartContainer hidden" id="cart">
       <div className="cartProductsContainer">
         <div className="productInCart">
           <div className="productBoxInCart">
@@ -26,11 +26,11 @@ const CartContainer = () => {
           </div>
           <div className="h-line"></div>
         </div>
-        
       </div>
-      <a className="checkOut" href="##">Check Out</a>
+      <a className="checkOut" href="##">
+        Check Out
+      </a>
     </div>
-    
   );
 };
 

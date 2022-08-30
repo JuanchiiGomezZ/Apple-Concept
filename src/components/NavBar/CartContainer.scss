@@ -1,11 +1,19 @@
+.active{
+  top: 46px;
+  transition: 0.5s;
+}
+.hidden{
+  top: -100%;
+  transition: 0.5s;
+}
+
+
 .cartContainer {
   min-height: 350px;
   height: auto;
   width: 320px;
-
   position: absolute;
   right: 11vw;
-  top: 46px;
   position: fixed;
 
   background-color: white;
@@ -77,20 +85,18 @@
   .cartContainer {
     right: 0;
     width: 100%;
-    .cartProductsContainer{
-        .productInCart {
-            .productBoxInCart {
-              margin: 0;
-              img{
-                width: 100px;
-              }
-              .nameProductInCart{
-                  font-size: 17px;
-                  
-              }
-            }
+    .cartProductsContainer {
+      .productInCart {
+        .productBoxInCart {
+          margin: 0;
+          img {
+            width: 100px;
           }
+          .nameProductInCart {
+            font-size: 17px;
+          }
+        }
+      }
     }
-    
   }
 }
