@@ -6,6 +6,7 @@ import Banner from './components/Banner/Banner';
 import Banner2 from './components/Banner/Banner2';
 import Footer from './components/Footer/Footer';
 
+import ItemCount from './components/ItemCount/ItemCount';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <NavBar/>
       <CartContainer/>
       <Banner/>
+      <ItemCount/>
       <Categories/>
       <Banner2/>
       <Footer/>

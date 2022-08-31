@@ -1,0 +1,16 @@
+.hooks{
+    font-family: $font-display;
+    .itemCounter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        gap: 50px;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
