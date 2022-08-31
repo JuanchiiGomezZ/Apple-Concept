@@ -6,30 +6,35 @@
         font-size: 60px;
         color: black;
         margin: 30px 0;
+        
     }
     .categoriesContainer{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        overflow: hidden;
         
         a.category{
            margin: 0 20px;
+           padding: 5px 0;
            text-decoration: none;
-           padding: 20px;
            border: rgba(50, 50, 50, 0) 1px solid;
            border-radius: 15px;
+           
             p{
-                font-family: $font-display;
+                font-family: $font-text-regular;
                 text-align: center;
                 font-size: 22px;
                 color: black;  
+
             }
             &:hover {
-                border: rgba(50, 50, 50, 0.258) 1px solid;
+                transform: scale(1.1,1.1);
+                transition: 0.3s;
+                
             }
         }
-      
     }
 }
 
