@@ -30,7 +30,7 @@ const Categories = () => {
       <div className="categoriesContainer">
         {categoriesData.map((category, i) => {
           return (
-            <a key={i} href ="##" className="category">
+            <a key={i} href="##" className="category">
               <img src={category.img} alt={category.name} />
               <p>{category.name}</p>
             </a>

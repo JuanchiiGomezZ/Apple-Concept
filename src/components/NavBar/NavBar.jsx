@@ -14,11 +14,11 @@ const NavBar = () => {
             <a href="##">Support</a>
           </div>
           <div className="desktop">
-            <CartWidget cartQuantity="3"/>
+            <CartWidget cartQuantity="2"/>
           </div>
         </div>
         <div className="mobile">
-          <CartWidget cartQuantity="4"/>
+          <CartWidget cartQuantity="2"/>
         </div>
       </div>
     </header>

@@ -8,7 +8,7 @@ const CartWidget = (props) => {
       <p>{props.cartQuantity}</p>
     </div>
   );
-};
+};  
 
 
 const openCart = () => {
