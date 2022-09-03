@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const CartContainer = () => {
   return (
     <div className="cartContainer hidden" id="cart">

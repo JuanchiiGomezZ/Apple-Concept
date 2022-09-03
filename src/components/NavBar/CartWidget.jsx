@@ -22,4 +22,6 @@ const openCart = () => {
   }
 };
 
+
+
 export default CartWidget;
