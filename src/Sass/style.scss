@@ -4,16 +4,25 @@
 
 
 /* Components */
-@import '../components/NavBar/NavBar.scss';
-@import '../components/NavBar/CartContainer.scss';
-@import '../components/Banner/Banner.scss';
-@import '../components/Categories/Categories.scss';
-@import '../components/Banner/Banner2.scss';
-@import '../components/Footer/Footer.scss';
+/* Global Components */
+@import '../components/Global/NavBar/NavBar.scss';
+@import '../components/Global/NavBar/CartContainer.scss';
+@import '../components/Global/Footer/Footer.scss';
+@import '../components/Global/PageNotFound/PageNotFound.scss';
+
+/* Home Components */
+@import '../components/Home/Banner/Banner.scss';
+@import '../components/Home/Banner/Banner2.scss';
+@import '../components/Home/Categories/Categories.scss';
+
+
+/* Iphone Component */
+@import '../components/Iphone/Iphone.scss';
 
 
 
-@import'../components/ItemCount/ItemCount.scss'
 
+/* More */
+@import'../components/ItemCount/ItemCount.scss';
 
 /* Screen */

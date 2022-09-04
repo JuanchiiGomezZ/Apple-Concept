@@ -1,0 +1,139 @@
+.shopTitle {
+  margin-top: 130px;
+  font-family: $font-display;
+  margin-left: 10%;
+  h1 {
+    font-size: 60px;
+    color: $black-color;
+  }
+  .shopSubtitle {
+    margin-top: 120px;
+    /* margin-left: 5px; */
+    display: flex;
+    color: $black-color;
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .gray {
+      color: #6e6e73;
+    }
+  }
+}
+
+.shopContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 80%;
+  margin: 50px auto 10px;
+  overflow: hidden;
+
+  .productCard {
+    width: 25%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 30px;
+    margin-bottom: 120px;
+    p {
+      color: #bf4800;
+      font-family: $font-text-regular;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    h2.productTitle {
+      color: $black-color;
+      font-family: $font-display;
+      font-size: 32px;
+      margin: 5px 0 25px;
+    }
+    img {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 370px;
+    }
+    .colors {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      .green {
+        background-color: #576856;
+      }
+      .silver {
+        background-color: #c9c9c9;
+      }
+      .gold {
+        background-color: #f7e0be;
+      }
+      .graphite {
+        background-color: #61605d;
+      }
+      .blue {
+        background-color: #aec7dd;
+      }
+      .red {
+        background-color: #c92434;
+      }
+      .pink{
+        background-color: #ffc5b9;
+      }
+      .purple{
+        background-color: #a89ce8;
+      }
+      .creamGreen{
+        background-color: #ade0cd;
+      }
+      .yellow{
+        background-color: #ffe681;
+      }
+    }
+
+    .description {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0  auto;
+      margin-top: 30px;
+      width: 90%;
+     
+      .productPrice {
+        color: $black-color;
+        font-family: $font-display;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      button {
+        background-color: #0071e3;
+        color: white;
+        border: 1px solid white;
+        font-family: $font-text-regular;
+        padding: 10px 16px;
+        border-radius: 90px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: white;
+            color: #0071e3;
+            border: 1px solid #0071e3;
+            transition: 0.3s;
+        }
+      }
+    }
+    &:hover {
+      padding-top: 10px;
+      transform: scale(1.05, 1.05);
+      transition: 0.4s;
+    }
+  }
+}

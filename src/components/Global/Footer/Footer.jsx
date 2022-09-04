@@ -71,7 +71,7 @@ const Footer = () => {
       <div className="hLine"></div>
       <div className="copyright">
         <p>Copyright</p>
-        <i class="fa-regular fa-copyright"></i>
+        <i className="fa-regular fa-copyright"></i>
         <p>2022 Apple Inc. All rights reserved.</p>
       </div>
     </footer>
