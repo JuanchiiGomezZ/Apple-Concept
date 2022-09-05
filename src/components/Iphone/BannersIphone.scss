@@ -1,0 +1,202 @@
+.bannersIphone {
+  background-color: #f2f2f2;
+  padding: 80px 0 0;
+  width: 100%;
+  height: auto;
+  overflow-y: hidden;
+  .bannerIphone1 {
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    background-image: url("https://www.apple.com/v/iphone/home/bi/images/overview/retail/why_apple__ezn1ktvka6oi_large_2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .bannerIphone1Text {
+      text-align: center;
+      color: $black-color;
+      h1 {
+        font-family: $font-display;
+        font-size: 55px;
+        margin-bottom: 15px;
+        width: 600px;
+      }
+      p {
+        width: 350px;
+        margin: 0 auto;
+        font-family: $font-text-light;
+        font-size: 21px;
+      }
+    }
+  }
+  .bannerIphone2 {
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    .bannerIphone2Text {
+      color: $black-color;
+      text-align: center;
+      h1 {
+        font-family: $font-display;
+        font-size: 50px;
+      }
+      p {
+        font-family: $font-text-light;
+        font-size: 24px;
+        width: 350px;
+      }
+    }
+    img {
+      width: 40%;
+    }
+  }
+  .servicesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 150px auto;
+    .servicesIphone{
+        img{
+            width:80px;
+            display: block;
+            margin: 0 auto;
+        }
+        margin: 0 20px;
+        .servicesIphoneText{
+          text-align: center;
+          color: $black-color;
+          h3{
+            font-family: $font-display;
+            font-size: 25px;
+            margin: 12px 0;
+          }
+          p{
+            font-family: $font-text-light;
+            width: 350px;
+          }
+        }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .bannersIphone {
+    .bannerIphone1 {
+      .bannerIphone1Text {
+        h1 {
+          font-size: 45px;
+          width: 450px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .bannerIphone2 {
+      .bannerIphone2Text {
+        h1 {
+          font-size: 38px;
+        }
+        p {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .bannersIphone {
+    .bannerIphone1 {
+      height: 30vh;
+    }
+
+    .bannerIphone2 {
+      height: 25vh;
+    }
+
+    .servicesContainer{
+        flex-direction: column;
+        margin: 100px auto;
+        .servicesIphone{
+            margin: 25px 0;
+            img{
+                width: 60px;
+            }
+        }
+    }
+  }
+}
+
+@media (max-width:800px){
+.bannersIphone{
+    .bannerIphone1{
+        .bannerIphone1Text{
+            h1{
+                font-size: 35px;
+                width: 320px;
+            }
+            p{
+                font-size: 16px;
+                width: 250px;
+            }
+        }
+    }
+    .bannerIphone2{
+        .bannerIphone2Text{
+            p{
+                font-size: 18px;
+                width:250px;
+                margin: 0 auto;
+            }
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+}
+}
+
+@media (max-width:600px){
+.bannersIphone{
+    .bannerIphone1{
+        background-image: url('https://i.postimg.cc/4dzcVKRg/BG-prueba.png');
+        background-size: cover;
+        height: 60vh;
+        .bannerIphone1Text{
+            h1{
+                width: 300px;
+            }
+            p{
+                font-size: 19px;
+                width: 280px;
+            }
+        }
+    }
+    .bannerIphone2{
+        flex-direction: column;
+        height: 60vh;
+        img{
+            width: 80%;
+        }
+    }
+    .servicesContainer{
+        .servicesIphone{
+            .servicesIphoneText{
+                p{
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+}
