@@ -8,7 +8,7 @@ const BannersIphone = () => {
           <h1>Why Apple is the best place to buy iPhone.</h1>
           <p>
             You can choose a payment option that works for you, pay less with a
-            trade‑in, connect your new iPhone to your carrier, and get set up
+            trade in, connect your new iPhone to your carrier, and get set up
             quickly. You can also chat with a Specialist anytime.
           </p>
         </div>
@@ -36,7 +36,7 @@ const BannersIphone = () => {
           <div className="servicesIphoneText">
             <h3>Free next-day delivery</h3>
             <p>
-              On any in‑stock iPhone ordered by 5:00 p.m. Or pick up available
+              On any in stock iPhone ordered by 5:00 p.m. Or pick up available
               items at an Apple Store.
             </p>
           </div>
@@ -52,11 +52,11 @@ const BannersIphone = () => {
           </div>
         </div>
         <div className="servicesIphone">
-          <img src="https://i.postimg.cc/YC5WPzm8/group.png" alt="Help" />
+          <img src="https://i.postimg.cc/W4VxgqJ8/people-2.png" alt="Help" />
           <div className="servicesIphoneText">
             <h3>Get help buying</h3>
             <p>
-              Have a question? Call a Specialist or chat online. Call1‑800‑MY‑APPLE.
+              Have a question? Call a Specialist or chat online. Call 800 MY APPLE.
             </p>
           </div>
         </div>

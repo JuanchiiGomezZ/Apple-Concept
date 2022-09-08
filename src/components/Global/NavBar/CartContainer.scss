@@ -19,6 +19,13 @@
   background-color: white;
   border: #1d1d1f61 1px solid;
   border-radius: 20px;
+  .cartHeading{
+    font-family: $font-display;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: $black-color;
+  }
   .cartProductsContainer {
     img {
       width: 80px;
@@ -55,7 +62,8 @@
     align-items: center;
     width: 80%;
     padding: 10px 0;
-    margin: 0 auto;
+    margin: 0 auto 20px;
+
     border-radius: 10px;
     cursor: pointer;
   }

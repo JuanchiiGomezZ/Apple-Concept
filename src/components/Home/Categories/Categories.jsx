@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Categories = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    customFetch(3000, dataCategories)
+    customFetch(0, dataCategories)
       .then((datos) => setData(dataCategories))
       .catch((err) => console.log(err));
   }, []);

@@ -171,7 +171,8 @@
     .bannerIphone1{
         background-image: url('https://i.postimg.cc/4dzcVKRg/BG-prueba.png');
         background-size: cover;
-        height: 60vh;
+        height: 80vh;
+        width: 90vw;
         .bannerIphone1Text{
             h1{
                 width: 300px;
@@ -184,7 +185,8 @@
     }
     .bannerIphone2{
         flex-direction: column;
-        height: 60vh;
+        height: 80vh;
+        width: 90vw;
         img{
             width: 80%;
         }

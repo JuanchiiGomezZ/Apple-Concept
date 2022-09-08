@@ -1,4 +1,33 @@
 .shopTitle {
+  .shopHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    .help{
+      display: flex;
+      align-items: center;
+      .helpText{
+        overflow: hidden;
+        font-size: 14px;
+        font-family: $font-text-regular;
+        p{
+          font-weight: bold;
+        }
+        a{
+          text-decoration: none;
+          color: $lightBlue-color;
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    img{
+      width: 50px;
+      margin-right: 5px;
+    }
+  }
   margin-top: 130px;
   font-family: $font-display;
   margin-left: 10%;
@@ -33,7 +62,7 @@
 
   .productCard {
     width: 25%;
-    height: 500px;
+    height: 520px;
     overflow: hidden;
     margin: 0 30px;
     margin-bottom: 120px;
@@ -59,6 +88,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-left: 70px;
       .circle {
         width: 15px;
         height: 15px;
@@ -96,6 +126,9 @@
       .yellow{
         background-color: #ffe681;
       }
+      .deepPurple{
+        background-color: #5b4470;
+      }
     }
 
     .description {
@@ -112,7 +145,7 @@
         font-size: 28px;
         font-weight: bold;
       }
-      button {
+      a {
         background-color: #0071e3;
         color: white;
         border: 1px solid white;
@@ -121,6 +154,7 @@
         border-radius: 90px;
         font-size: 18px;
         border: none;
+        text-decoration: none;
         cursor: pointer;
         &:hover {
             background-color: white;

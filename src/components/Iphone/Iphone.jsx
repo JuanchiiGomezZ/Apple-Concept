@@ -1,19 +1,32 @@
 /* import react from "react"; */
-import dataIphones from "../../utils/dataIphones";
+import data from "../../utils/data";
 import BannersIphone from "./BannersIphone";
+import helper from "../../assets/images/iphone/Helper.jpg";
+import { Link } from "react-router-dom";
+
 
 const Iphone = () => {
+
   return (
     <>
       <div className="shopTitle">
-        <h1>Shop iPhone</h1>
+        <div className="shopHeading">
+          <h1>Shop iPhone</h1>
+          <div className="help">
+            <img src={helper} alt="" />
+            <div className="helpText">
+              <p>Need shopping help?</p>
+              <a href="##">Ask an iPhone Specialist</a>
+            </div>
+          </div>
+        </div>
         <div className="shopSubtitle">
           <h2>All models.</h2>
           <h2 className="gray">Take your pick.</h2>
         </div>
       </div>
       <div className="shopContainer">
-        {dataIphones.map((product) => {
+        {data.map((product) => {
           return (
             <div key={product.id} className="productCard">
               <p>{product.new}</p>
@@ -29,14 +42,16 @@ const Iphone = () => {
               </div>
               <div className="description">
                 <h2 className="productPrice">${product.price}</h2>
-                <button>Buy</button>
+                <Link to={`/Shop/iPhone/${product.id}`}>Buy</Link>
+             
               </div>
             </div>
           );
         })}
       </div>
-      <BannersIphone/>
+      <BannersIphone />
     </>
+    
   );
 };
 

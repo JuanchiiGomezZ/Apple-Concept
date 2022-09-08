@@ -1,0 +1,403 @@
+.iphoneDetail {
+  color: $black-color;
+  margin-top: 50px;
+  font-family: $font-display;
+  .iphoneDetailHeading{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    .iphoneDetailTitle {
+      .new {
+        color: $orange-color;
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      .fromPrice {
+        font-family: $font-text-light;
+        font-size: 14px;
+      }
+    }
+    .help{
+      display: flex;
+      align-items: center;
+      .helpText{
+        overflow: hidden;
+        font-size: 14px;
+        font-family: $font-text-regular;
+        p{
+          font-weight: bold;
+        }
+        a{
+          text-decoration: none;
+          color: $lightBlue-color;
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .iphoneDetailContainer {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    margin-bottom: 50px;
+    .images {
+      .principalImage {
+        width: 65vw;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+      }
+      .secondaryImage {
+        display: flex;
+        justify-content: center;
+        
+      }
+    }
+    .selectorContainer {
+      .colors {
+        margin-bottom: 100px;
+        .colorsTitle {
+          display: flex;
+          justify-content: start;
+          font-size: 25px;
+          flex-wrap: wrap;
+          .gray {
+            color: #6e6e73;
+            margin-left: 3px;
+          }
+        }
+        h4 {
+          font-size: 20px;
+          margin: 30px 0;
+        }
+        .colorsContainer {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+
+          .circle {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 0 4px;
+
+            &:hover {
+              border: 3px solid $lightBlue-color;
+            }
+          }
+          .green {
+            background-color: #576856;
+          }
+          .silver {
+            background-color: #c9c9c985;
+          }
+          .gold {
+            background-color: #f7e0be;
+          }
+          .graphite {
+            background-color: #61605d;
+          }
+          .blue {
+            background-color: #aec7dd;
+          }
+          .red {
+            background-color: #c92434;
+          }
+          .pink {
+            background-color: #ffc5b9;
+          }
+          .purple {
+            background-color: #a89ce8;
+          }
+          .creamGreen {
+            background-color: #ade0cd;
+          }
+          .yellow {
+            background-color: #ffe681;
+          }
+          .deepPurple{
+            background-color: #564664;
+          }
+        }
+      }
+      .storage {
+        .storageTitle {
+          font-size: 25px;
+          display: flex;
+          flex-wrap: wrap;
+          .gray {
+            color: #6e6e73;
+            margin-left: 4px;
+          }
+        }
+        .gb {
+          width: 80%;
+          display: flex;
+          justify-content: space-between;
+          padding: 25px;
+          border: 1px solid rgba(0, 0, 0, 0.353);
+          border-radius: 20px;
+          margin-top: 20px;
+          p {
+            font-family: $font-text-light;
+            font-size: 14px;
+          }
+          &:hover {
+            border: 3px solid $lightBlue-color;
+            margin-top: 16px;
+          }
+        }
+      }
+      #addCartButton {
+        background-color: #0071e3;
+        color: white;
+        border: 1px solid white;
+        font-family: $font-display;
+        padding: 10px 16px;
+        border-radius: 20px;
+        font-size: 22px;
+        border: none;
+        margin-top: 50px;
+        width: 80%;
+        height: 50px;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+          color: #0071e3;
+          border: 1px solid #0071e3;
+          transition: 0.25s;
+        }
+      }
+    }
+  }
+  .featuresContainer {
+    margin: 100px auto 120px;
+
+    .featuresTitle {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 10%;
+      h1 {
+        font-size: 35px;
+      }
+      .gray {
+        color: #6e6e73;
+        margin-left: 5px;
+      }
+    }
+    .features {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 30px;
+      padding: 20px 40px 20px 20px;
+      border: 1px solid rgba(0, 0, 0, 0.372);
+      border-radius: 20px;
+      .feature {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+   
+        img {
+          width: 65px;
+          display: block;
+          margin: 0 auto;
+        }
+        h2 {
+         
+          font-size: 20px;
+        }
+        p {
+          width: 160px;
+  
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .gray {
+          color: #86868b;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .iphoneDetail {
+    .iphoneDetailHeading{
+      .help{
+        display: none;
+      }
+    }
+    .featuresContainer {
+      .features {
+        width: 90%;
+        .feature {
+          img {
+            width: 50px;
+          }
+          h2 {
+            font-size: 18px !important;
+          }
+          p {
+            width: 140px;
+            font-size: 14px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .iphoneDetail {
+    .featuresContainer {
+      .features {
+        flex-direction: column;
+        width: 200px;
+        padding: 20px;
+        .feature {
+          margin-top: 30px;
+          img {
+            width: 80px;
+          }
+          h2 {
+            font-size: 22px !important;
+          }
+          p {
+            width: 140px;
+            font-size: 16px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .iphoneDetail {
+    .iphoneDetailContainer {
+      grid-template-columns: 60% 40%;
+      margin-top: 70px;
+      .images {
+        .principalImage {
+          width: 60vw;
+        }
+        .secondaryImage {
+          flex-direction: column;
+          & img{
+            width: 90%;
+          }
+        }
+      }
+      .selectorContainer {
+        .colors {
+          margin: 30px 0 70px;
+          
+          .colorsTitle {
+            font-size: 22px;
+          }
+          .colorsContainer {
+            .circle {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+        .storage {
+          .storageTitle {
+            font-size: 21px;
+          }
+          .gb {
+            width: 90%;
+            padding: 20px;
+            h3{
+              font-size: 16px;
+            }
+          }
+        }
+        #addCartButton {
+          width: 90%;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .iphoneDetail {
+    .iphoneDetailContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .images {
+        .principalImage {
+          width: 80vw;
+        }
+        .secondaryImage {
+          flex-direction: row;
+          & img{
+            width: 100%;
+          }
+        }
+      }
+      .selectorContainer {
+        .colors {
+          margin: 70px 0 70px;
+          
+          .colorsTitle {
+            font-size: 25px;
+          }
+          .colorsContainer {
+            .circle {
+              width: 35px;
+              height: 35px;
+            }
+          }
+        }
+        .storage {
+          .storageTitle {
+            font-size: 24px;
+          }
+          .storageCards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .gb {
+              width: 90%;
+              padding: 22px;
+              h3{
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        #addCartButton {
+          width: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 25px auto;
+        }
+      }
+    }
+  }
+}
