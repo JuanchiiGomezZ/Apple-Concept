@@ -4,6 +4,7 @@ import BannersIphone from "./BannersIphone";
 import helper from "../../assets/images/iphone/Helper.jpg";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import scrollTopOnClick from "../../utils/scrollTopOnClick";
 
 const Iphone = () => {
   const [data, setData] = useState([]);
@@ -61,7 +62,7 @@ const Iphone = () => {
               </div>
               <div className="description">
                 <h2 className="productPrice">${product.price}</h2>
-                <Link to={`/Shop/iPhone/${product.id}`}>Buy</Link>
+                <Link to={`/Shop/iPhone/${product.id}`} onClick={scrollTopOnClick}>Buy</Link>
               </div>
             </div>
           );

@@ -1,15 +1,16 @@
+
 const data =[
     {
         new:'New',
         name:'iPhone 14 Pro Max',
-        img:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14pro-202209?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1661782459247',
+        img:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone14promax-digitalmat-gallery-5-202209?wid=364&hei=333&fmt=png-alpha&.v=1660830896850',
         price:1099,
         id:101,
         color1:'deepPurple circle',
         color2:'gold circle',
         color3:'silver circle',
         color4:'graphite circle',
-        image1:'https://i.postimg.cc/d15FNS55/iphone14-Pro-1.jpg',
+        image1:'https://i.postimg.cc/fbkwNbb4/iphone14-Pro-1.jpg',
         image2:'https://i.postimg.cc/HnKgd8D5/iphone14-Pro-2-1.jpg',
         image3:'https://i.postimg.cc/44FZzq7d/iphone14-Pro-2-2.jpg',
         category:'iPhone'
@@ -24,7 +25,7 @@ const data =[
         color2:'gold circle',
         color3:'silver circle',
         color4:'graphite circle',
-        image1:'https://i.postimg.cc/d15FNS55/iphone14-Pro-1.jpg',
+        image1:'https://i.postimg.cc/fbkwNbb4/iphone14-Pro-1.jpg',
         image2:'https://i.postimg.cc/HnKgd8D5/iphone14-Pro-2-1.jpg',
         image3:'https://i.postimg.cc/MGGvv0zf/iphone14-Pro-2-2.jpg',
         category:'iPhone'
@@ -40,7 +41,7 @@ const data =[
         color3:'graphite circle',
         color4:'silver circle',
         color5:'red circle',
-        image1:'https://i.postimg.cc/yYR40SDW/iphone14-1.jpg',
+        image1:'https://i.postimg.cc/RhwkyP2b/iphone14-1.jpg',
         image2:'https://i.postimg.cc/BvqrWYM1/iphone14-2-1.jpg',
         image3:'https://i.postimg.cc/HkzrYv1C/iphone14-2-2.jpg',
         category:'iPhone'
@@ -105,7 +106,7 @@ const data =[
         color4:'creamGreen circle',
         color5:'graphite circle',
         color6:'red circle',
-        image1:'https://i.postimg.cc/TPQm31G3/i-Phone12-1.jpg',
+        image1:'https://i.postimg.cc/jjpKjQX7/i-Phone12-1.jpg',
         image2:'https://i.postimg.cc/BZzTFjF8/i-Phone12-2-1.jpg',
         image3:'https://i.postimg.cc/kgfctcPx/iphone12-2-2.jpg',
         category:'iPhone'
@@ -122,9 +123,9 @@ const data =[
         color4:'creamGreen circle',
         color5:'graphite circle',
         color6:'red circle',
-        image1:'https://i.postimg.cc/TPQm31G3/i-Phone12-1.jpg',
+        image1:'https://i.postimg.cc/jjpKjQX7/i-Phone12-1.jpg',
         image2:'https://i.postimg.cc/BZzTFjF8/i-Phone12-2-1.jpg',
-        image3:'https://i.postimg.cc/W1GgxSHr/iphone12-2-2.jpg',
+        image3:'https://i.postimg.cc/kgfctcPx/iphone12-2-2.jpg',
         category:'iPhone',
     },
     {
