@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <header>
       <div className="nav">
-        <i className="fa-brands fa-apple"></i>
+        <NavLink to="/"><i className="fa-brands fa-apple"></i></NavLink>
         <div className="headerSections">
           <div className="sections">
             <NavLink to="/">Home</NavLink>

@@ -1,16 +1,21 @@
 import React from "react";
 import helper from "../../assets/images/iphone/Helper.jpg";
+import { Link } from "react-router-dom";
 
-
-const IphoneDetail = ({data}) => {
+const IphoneDetail = ({ data }) => {
   return (
     <div className="iphoneDetail">
+      <Link to="/Shop/iPhone" className="goBack">
+        <i className="fa-solid fa-angle-left"></i>
+        <p>Store</p>
+      </Link>
       <div className="iphoneDetailHeading">
         <div className="iphoneDetailTitle">
           <p className="new">{data.new}</p>
           <h1>Buy {data.name}</h1>
           <p className="fromPrice">
-            From ${data.price} or ${(data.price/24).toFixed(2)}/mo.per month for 24 mo.months before trade‑in*
+            From ${data.price} or ${(data.price / 24).toFixed(2)}/mo.per month
+            for 24 mo.months before trade‑in*
           </p>
         </div>
         <div className="help">
@@ -25,20 +30,10 @@ const IphoneDetail = ({data}) => {
       <div className="iphoneDetailContainer">
         {
           <div className="images">
-            <img
-              className="principalImage"
-              src={data.image1}
-              alt={data.name}
-            />
-            <div className="secondaryImage">
-              <img
-               src={data.image2}
-                alt={data.name}
-              />
-              <img
-                src={data.image3}
-                alt={data.name}
-              />
+            <img className="principalImage" src={data.image1} alt={data.name} />
+            <div className={`secondaryImage ${data.category}`}>
+              <img src={data.image2} alt={data.name} />
+              <img src={data.image3} alt={data.name} />
             </div>
           </div>
         }

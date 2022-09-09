@@ -1,17 +1,36 @@
 /* import react from "react"; */
-import data from "../../utils/data";
+import dataProducts from "../../utils/dataProducts";
 import BannersIphone from "./BannersIphone";
 import helper from "../../assets/images/iphone/Helper.jpg";
-import { Link } from "react-router-dom";
-
+import { Link, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Iphone = () => {
+  const [data, setData] = useState([]);
+
+  const { categoryId } = useParams();
+  useEffect(() => {
+    const getData = new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(dataProducts);
+      }, 1000);
+    });
+    if (categoryId) {
+      getData.then((res) =>
+        setData(
+          res.filter((dataCategory) => dataCategory.category === categoryId)
+        )
+      );
+    } else {
+      getData.then((res) => setData(res));
+    }
+  }, [categoryId]);
 
   return (
-    <>
+    <div>
       <div className="shopTitle">
         <div className="shopHeading">
-          <h1>Shop iPhone</h1>
+          <h1>Shop {categoryId}</h1>
           <div className="help">
             <img src={helper} alt="" />
             <div className="helpText">
@@ -43,15 +62,13 @@ const Iphone = () => {
               <div className="description">
                 <h2 className="productPrice">${product.price}</h2>
                 <Link to={`/Shop/iPhone/${product.id}`}>Buy</Link>
-             
               </div>
             </div>
           );
         })}
       </div>
       <BannersIphone />
-    </>
-    
+    </div>
   );
 };
 

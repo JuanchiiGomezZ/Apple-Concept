@@ -21,13 +21,13 @@ const App = () => {
       <Routes>
         <Route path='*' element={<PageNotFound/>}></Route>
         <Route path='/' element={<Home/>}></Route>
-        <Route path='/Shop/iPhone' element={<Iphone/>}></Route>
+        <Route path='/Shop/:categoryId' element={<Iphone/>}></Route>
         <Route path='/Shop/iPhone/:iphoneId' element={<IphoneDetailContainer/>}></Route>
       </Routes>
       <Footer/>
     </>
   );
-}
+} 
 
 export default App;
 

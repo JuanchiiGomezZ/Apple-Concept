@@ -2,13 +2,24 @@
   color: $black-color;
   margin-top: 50px;
   font-family: $font-display;
+  .goBack{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    left: 22px;
+    font-size: 25px;
+    gap: 4px;
+    text-decoration: none;
+    color:$black-color ;
+  }
   .iphoneDetailHeading{
     width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 90px;
     .iphoneDetailTitle {
       .new {
         color: $orange-color;
@@ -60,10 +71,13 @@
         justify-content: center;
         
       }
+      .Mac{
+        display: none;
+      }
     }
     .selectorContainer {
       .colors {
-        margin-bottom: 100px;
+        margin: 50px 0 70px;
         .colorsTitle {
           display: flex;
           justify-content: start;
@@ -124,7 +138,10 @@
             background-color: #ffe681;
           }
           .deepPurple{
-            background-color: #564664;
+            background-color: #44394e;
+          }
+          .gray{
+            background-color: silver;
           }
         }
       }
@@ -287,7 +304,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .iphoneDetail {
     .iphoneDetailContainer {
       grid-template-columns: 60% 40%;
@@ -340,7 +357,7 @@
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .iphoneDetail {
     .iphoneDetailContainer {
       display: flex;

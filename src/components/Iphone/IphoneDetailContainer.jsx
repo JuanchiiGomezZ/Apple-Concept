@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import IphoneDetail from './IphoneDetail';
-import dataIphones from '../../utils/data';
+import dataIphones from '../../utils/dataProducts';
 import {useParams} from 'react-router-dom';
 
 

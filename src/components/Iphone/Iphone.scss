@@ -75,7 +75,7 @@
     h2.productTitle {
       color: $black-color;
       font-family: $font-display;
-      font-size: 32px;
+      font-size: 28px;
       margin: 5px 0 25px;
     }
     img {
@@ -83,12 +83,13 @@
       margin: auto;
       margin-bottom: 20px;
       width: 370px;
+      max-width: 100%;
+      max-height: 240px;
     }
     .colors {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 70px;
       .circle {
         width: 15px;
         height: 15px;
@@ -128,6 +129,9 @@
       }
       .deepPurple{
         background-color: #5b4470;
+      }
+      .gray{
+        background-color: silver;
       }
     }
 

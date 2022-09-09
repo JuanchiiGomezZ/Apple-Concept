@@ -1,6 +1,7 @@
 import React from "react";
 import shoppingBag from "../../../assets/images/shopping-bag.png";
 
+
 const CartWidget = (props) => {
   return (
     <div className="logoCart" onClick={openCart}>

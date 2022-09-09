@@ -12,8 +12,10 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    i{
+    a{
       font-size: 1.5rem;
+      color: $font-gray-color;
+      text-decoration: none;
       cursor: pointer;
       &:hover{
         color: $font-white-color;
