@@ -92,7 +92,7 @@ const data =[
         image1:'https://i.postimg.cc/DfJPzKnP/i-Phone13-1.jpg',
         image2:'https://i.postimg.cc/mDvddv7W/i-Phone13-2-1.jpg',
         image3:'https://i.postimg.cc/LsjN0C4c/i-Phone13-2-2.jpg',
-        category:'iPhone'
+        category:'iPhone',
     },
     {
         new:'',

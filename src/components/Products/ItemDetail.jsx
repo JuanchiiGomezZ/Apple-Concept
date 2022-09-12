@@ -2,7 +2,7 @@ import React from "react";
 import helper from "../../assets/images/iphone/Helper.jpg";
 import { Link } from "react-router-dom";
 
-const IphoneDetail = ({ data }) => {
+const ItemDetail = ({ data }) => {
   return (
     <div className="iphoneDetail">
       <Link to="/Shop/iPhone" className="goBack">
@@ -119,4 +119,4 @@ const IphoneDetail = ({ data }) => {
   );
 };
 
-export default IphoneDetail;
+export default ItemDetail;

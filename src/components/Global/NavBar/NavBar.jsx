@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
-
+import scrollTopOnClick from "../../../utils/scrollTopOnClick";
 
 
 
@@ -9,11 +9,11 @@ const NavBar = () => {
   return (
     <header>
       <div className="nav">
-        <NavLink to="/"><i className="fa-brands fa-apple"></i></NavLink>
+        <NavLink to="/" onClick={scrollTopOnClick}><i className="fa-brands fa-apple"></i></NavLink>
         <div className="headerSections">
           <div className="sections">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/">Store</NavLink>
+            <NavLink to="/" onClick={scrollCategoriesOnClick}>Store</NavLink>
             <a href="##">Services</a>
             <a href="##">Support</a>
           </div>
@@ -28,5 +28,13 @@ const NavBar = () => {
     </header>
   );
 };
+
+
+const scrollCategoriesOnClick = () => {
+  window.scroll({
+    top: 650,
+    behavior: "smooth"
+})
+}
 
 export default NavBar;

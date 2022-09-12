@@ -1,14 +1,13 @@
 import React, {useState, useEffect} from 'react'
-import IphoneDetail from './IphoneDetail';
+import ItemDetail from './ItemDetail';
 import dataIphones from '../../utils/dataProducts';
 import {useParams} from 'react-router-dom';
 
 
 
 
-const IphoneDetailContainer = () =>{
+const ItemDetailContainer = () =>{
     const [data, setData] = useState({})
-    
     const {iphoneId} = useParams()
 
 
@@ -16,7 +15,7 @@ const IphoneDetailContainer = () =>{
         const getData = new Promise(resolve =>{
             setTimeout(()=>{
                 resolve(dataIphones);
-            }, 0)
+            }, 2000)
         });
         getData.then(res => setData(res.find(dataIphone => dataIphone.id === parseInt(iphoneId))))
     },[iphoneId]);
@@ -24,8 +23,9 @@ const IphoneDetailContainer = () =>{
 
 
   return (
-    <IphoneDetail data ={data}/>
+    <ItemDetail data ={data}/>
+
   )
 }
 
-export default IphoneDetailContainer;
+export default ItemDetailContainer;

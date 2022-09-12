@@ -16,13 +16,15 @@
 @import '../components/Home/Categories/Categories.scss';
 
 
-/* Iphone Component */
-@import '../components/Iphone/Iphone.scss';
-@import '../components/Iphone/BannersIphone.scss';
-@import '../components/Iphone/IphoneDetail.scss';
+/* Products Component */
+@import '../components/Products/Banners/BannersIphone.scss';
+@import '../components/Products/ItemDetail.scss';
+@import '../components/Products/Items.scss';
 
 
 /* More */
-@import'../components/ItemCount/ItemCount.scss';
+@import'../utils/ItemCount/ItemCount.scss';
+@import '../utils/Loading.scss';
+
 
 /* Screen */

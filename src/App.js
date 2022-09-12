@@ -6,8 +6,8 @@ import CartContainer from './components/Global/NavBar/CartContainer';
 import Footer from './components/Global/Footer/Footer';
 import PageNotFound from "./components/Global/PageNotFound/PageNotFound";
 import Home from './components/Home/Home';
-import Iphone from './components/Iphone/Iphone';
-import IphoneDetailContainer from "./components/Iphone/IphoneDetailContainer";
+import ItemDetailContainer from "./components/Products/ItemDetailContainer";
+import ItemsListContainer from './components/Products/ItemsListContainer'
 
 
 /* import ItemCount from './components/ItemCount/ItemCount'; */
@@ -21,8 +21,8 @@ const App = () => {
       <Routes>
         <Route path='*' element={<PageNotFound/>}></Route>
         <Route path='/' element={<Home/>}></Route>
-        <Route path='/Shop/:categoryId' element={<Iphone/>}></Route>
-        <Route path='/Shop/iPhone/:iphoneId' element={<IphoneDetailContainer/>}></Route>
+        <Route path='/Shop/:categoryId' element={<ItemsListContainer/>}></Route>
+        <Route path='/Shop/iPhone/:iphoneId' element={<ItemDetailContainer/>}></Route>
       </Routes>
       <Footer/>
     </>
