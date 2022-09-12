@@ -27,6 +27,21 @@ const ItemsListContainer = () => {
       getData.then((res) => setData(res));
     }
   }, [categoryId]);
+
+  const bannerSelector = () =>{
+    if(categoryId === 'iPhone'){
+      return <BannersIphone/>
+    }
+    else if(categoryId === 'Mac'){
+      return <h1>Banners Mac</h1>
+    }
+    else if(categoryId === 'Apple Watch'){
+      return <h1>BANNERS APPLE WATCH</h1>
+    }
+    else if(categoryId === 'AirPods'){
+      return <h1>BANNERS AirPods</h1>
+    }
+  }
   return (
     <>
       {data.length ? (
@@ -50,7 +65,7 @@ const ItemsListContainer = () => {
           <div className="shopContainer">
             <ItemsList data={data} />
           </div>
-          {categoryId === 'iPhone' ? <BannersIphone/> : <div></div>}
+          {bannerSelector()};
         </>
       ) : (
         <Loading />
@@ -59,4 +74,9 @@ const ItemsListContainer = () => {
   );
 };
 
+
+
+
 export default ItemsListContainer;
+
+
