@@ -22,7 +22,7 @@ const App = () => {
         <Route path='*' element={<PageNotFound/>}></Route>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/Shop/:categoryId' element={<ItemsListContainer/>}></Route>
-        <Route path='/Shop/iPhone/:iphoneId' element={<ItemDetailContainer/>}></Route>
+        <Route path='/Shop/:categoryId/:iphoneId' element={<ItemDetailContainer/>}></Route>
       </Routes>
       <Footer/>
     </>

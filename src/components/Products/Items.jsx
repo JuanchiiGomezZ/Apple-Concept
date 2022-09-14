@@ -15,6 +15,7 @@ const Items = ({
   color5,
   color6,
   price,
+  category,
 }) => {
   return (
     <>
@@ -32,7 +33,7 @@ const Items = ({
          </div>
          <div className="description">
            <h2 className="productPrice">${price}</h2>
-           <Link to={`/Shop/iPhone/${id}`} onClick={scrollTopOnClick}>Buy</Link>
+           <Link to={`/Shop/${category}/${id}`} onClick={scrollTopOnClick}>Buy</Link>
          </div>
        </div>
     </>
