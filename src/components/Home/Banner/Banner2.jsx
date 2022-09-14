@@ -11,8 +11,8 @@ const Banner2 = () => {
           <a href="##">Buy</a>
         </div>
         <img
-          src="https://www.apple.com/v/iphone/home/bi/images/overview/hero/iphone_13_pro_hero__gqclakbze4a6_large_2x.png"
-          alt="iPadAir"
+          src="https://i.postimg.cc/66L1L1yS/iphone13-Square.png"
+          alt="iPhone13"
         />
       </div>
       <div className="sq2" href="##">

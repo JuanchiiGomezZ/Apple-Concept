@@ -205,7 +205,7 @@ const data =[
     {
         new:'',
         name:'Pro Display XDR',
-        img:'https://i.blogs.es/791fa3/apple_mac-pro-display-pro_display-pro_060319/1366_2000.jpg',
+        img:'https://i.postimg.cc/VsnfXzYB/Pro-Display-XDR.jpg',
         price:4999,
         id:503,
         color1:'gray circle',
