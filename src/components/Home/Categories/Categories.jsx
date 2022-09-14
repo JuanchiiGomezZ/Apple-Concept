@@ -22,7 +22,7 @@ const Categories = () => {
             />
             <p>iPhone</p>
           </NavLink>
-          <NavLink to="/" className="category" onClick={scrollTopOnClick}>
+          <NavLink to="/Shop/iPad" className="category" onClick={scrollTopOnClick}>
             <img
               src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783381000"
               alt="iPad"

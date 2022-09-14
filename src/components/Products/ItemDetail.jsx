@@ -1,11 +1,12 @@
 import React from "react";
 import helper from "../../assets/images/iphone/Helper.jpg";
 import { Link } from "react-router-dom";
+import ItemCount from '../../utils/ItemCount/ItemCount'
 
 const ItemDetail = ({ data }) => {
   return (
     <div className="iphoneDetail">
-      <Link to="/Shop/iPhone" className="goBack">
+      <Link to={`/Shop/${data.category}`}  className="goBack">
         <i className="fa-solid fa-angle-left"></i>
         <p>Store</p>
       </Link>
@@ -75,6 +76,7 @@ const ItemDetail = ({ data }) => {
                 <p>From ${data.price + 600}</p>
               </div>
             </div>
+            <ItemCount/>
             <button id="addCartButton">Add to cart</button>
           </div>
         </div>

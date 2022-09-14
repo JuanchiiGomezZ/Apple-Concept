@@ -1,16 +1,32 @@
-.hooks{
-    font-family: $font-display;
-    .itemCounter{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 120px;
-        gap: 50px;
-        font-size: 50px;
+.hooks {
+  font-family: $font-display;
+  width: 80%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .itemCounter {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    .counter {
+      margin: 0 30px;
+    }
+    .operator{
         cursor: pointer;
     }
-    h2{
-        text-align: center;
-        margin-top: 20px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width:700px) {
+    .hooks{
+        margin: 30px auto;
     }
 }

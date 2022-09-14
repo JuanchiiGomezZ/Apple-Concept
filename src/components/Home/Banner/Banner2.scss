@@ -57,23 +57,38 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    background-image: url("https://www.apple.com/v/home/takeover/e/images/overview/hero__x15fcac9fw2q_large.jpg");
+    background-image: url("https://www.apple.com/v/home/ar/images/promos/apple-watch-series-8/promo_apple_watch_series_8_order__bo2d1i4q0mqa_large.jpg");
     .sq2Text {
       color: white;
       text-align: center;
-      margin-top: 62%;
-      h2 {
-        font-family: $font-display;
-        font-size: 50px;
-      }
+      .sq2Title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:  $font-display;
+        font-size: 37px;
+        color: white;
+        margin-top: 14px;
+        i {
+          font-size: 2.7rem;
+          margin-bottom: 5px;
+          margin-right: 10px;
+        }
+    }
       p {
         font-family: $font-text-regular;
-        margin: 8px;
-        font-size: 20px;
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+      .watchSeries{
+        color: #b51f24;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 20px;
       }
       a {
         font-size: 23px;
-        margin: 20px;
+        margin: 20px 20px;
         color: #0071e3;
         text-decoration: none;
         font-family: $font-text-regular;
@@ -176,12 +191,11 @@
   }
 }
 
-@media (max-width: 1400px) {
-  .banners {
+@media (max-width: 1300px) {
     .squares {
       .sq1 {
         img {
-          width: 69%;
+          width: 59%;
         }
       }
       .sq3 {
@@ -195,7 +209,7 @@
         }
       }
     }
-  }
+  
 }
 
 @media (max-width: 1000px) {

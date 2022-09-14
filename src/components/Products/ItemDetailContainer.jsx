@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import ItemDetail from './ItemDetail';
-import dataIphones from '../../utils/dataProducts';
+import dataProducts from '../../utils/dataProducts';
 import {useParams} from 'react-router-dom';
 
 
@@ -14,8 +14,8 @@ const ItemDetailContainer = () =>{
     useEffect(() =>{
         const getData = new Promise(resolve =>{
             setTimeout(()=>{
-                resolve(dataIphones);
-            }, 2000)
+                resolve(dataProducts);
+            }, 0)
         });
         getData.then(res => setData(res.find(dataIphone => dataIphone.id === parseInt(iphoneId))))
     },[iphoneId]);
