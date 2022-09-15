@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const CartContainer = () => {
@@ -42,9 +43,9 @@ const CartContainer = () => {
           <div className="h-line"></div>
         </div>
       </div>
-      <a className="checkOut" href="##">
+      <Link to="/Cart" className="checkOut" href="##">
         Check Out
-      </a>
+      </Link>
     </div>
   );
 };

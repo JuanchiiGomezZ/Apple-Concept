@@ -9,6 +9,7 @@
 @import '../components/Global/NavBar/CartContainer.scss';
 @import '../components/Global/Footer/Footer.scss';
 @import '../components/Global/PageNotFound/PageNotFound.scss';
+@import '../components/Global/Cart/Cart.scss';
 
 /* Home Components */
 @import '../components/Home/Banner/Banner.scss';
@@ -23,7 +24,7 @@
 
 
 /* More */
-@import'../utils/ItemCount/ItemCount.scss';
+@import'../components/Products/ItemCount/ItemCount.scss';
 @import '../utils/Loading.scss';
 
 

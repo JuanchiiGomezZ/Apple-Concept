@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import helper from "../../assets/images/iphone/Helper.jpg";
 import { Link } from "react-router-dom";
-import ItemCount from '../../utils/ItemCount/ItemCount'
+import ItemCount from '../Products/ItemCount/ItemCount'
+
 
 const ItemDetail = ({ data }) => {
+  const [goToCart, setGoToCart] = useState(false);
+
+  const onAdd = () => {
+    setGoToCart(true);
+  };
+
+
   return (
     <div className="iphoneDetail">
       <Link to={`/Shop/${data.category}`}  className="goBack">
@@ -76,8 +84,13 @@ const ItemDetail = ({ data }) => {
                 <p>From ${data.price + 600}</p>
               </div>
             </div>
-            <ItemCount/>
-            <button id="addCartButton">Add to cart</button>
+            {
+              goToCart 
+              ? <Link to="/Cart" className="checkOut" href="##">Checkout</Link>
+              : <> <ItemCount/> <button id="addCartButton" onClick={onAdd}>Add to cart</button ></>
+            }
+            
+           
           </div>
         </div>
       </div>
