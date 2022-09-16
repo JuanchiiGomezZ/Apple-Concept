@@ -5,6 +5,9 @@ import { useParams } from "react-router-dom";
 import Loading from "../../utils/Loading";
 import helper from "../../assets/images/iphone/Helper.jpg";
 import BannersIphone from './Banners/BannersIphone';
+import BannersMac from "./Banners/BannersMac";
+import BannerIpad from './Banners/BannerIpad';
+import ServicesBanner from "./Banners/ServicesBanner";
 
 
 const ItemsListContainer = () => {
@@ -33,13 +36,10 @@ const ItemsListContainer = () => {
       return <BannersIphone/>
     }
     else if(categoryId === 'Mac'){
-      return <h1>Banners Mac</h1>
+      return <BannersMac/>
     }
-    else if(categoryId === 'Apple Watch'){
-      return <h1>BANNERS APPLE WATCH</h1>
-    }
-    else if(categoryId === 'AirPods'){
-      return <h1>BANNERS AirPods</h1>
+    else if(categoryId === 'iPad'){
+      return <BannerIpad/>
     }
   }
   return (
@@ -65,7 +65,8 @@ const ItemsListContainer = () => {
           <div className="shopContainer">
             <ItemsList data={data} />
           </div>
-          {bannerSelector()};
+          {bannerSelector()}
+          <ServicesBanner/>
         </>
       ) : (
         <Loading />

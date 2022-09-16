@@ -144,7 +144,7 @@ const data =[
     },
     {
         new:'',
-        name:'MacBook Air with M1 chip',
+        name:'MacBook Air M1',
         img:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-40-macbook-air-202110?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1633726242000',
         price:999,
         id:401,
@@ -156,7 +156,7 @@ const data =[
     },
     {
         new:'',
-        name:'MacBook Air with M1 chip',
+        name:"MacBook Air M2 ",
         img:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-40-macbook-air-202206?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1653499620093',
         price:1199,
         id:402,

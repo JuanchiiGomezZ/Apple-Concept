@@ -1,0 +1,71 @@
+.bannersMac{
+    background-image: url('../../../assets/images/MacBanner.png');
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    .bannersMacText{
+        color: white;
+        text-align: center;
+        margin-top: 10vh;
+        overflow: hidden;
+        padding-bottom: 20px;
+        .new{
+            color:$orange-color;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px;
+        }
+        .bannerMacTitle{
+            font-size: 56px;
+        }
+        .bannerMacSubtitle{
+            font-size: 35px;
+        }
+        .bannerMacPrice{
+            font-family: $font-text-light;
+            font-size: 18px;
+            margin: 25px 0 35px;
+        }
+        #buyButton{
+        background-color: #0071e3;
+        color: white;
+        border: 1px solid white;
+        font-family: $font-display;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 22px;
+        border: none;
+        width: 80%;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+        &:hover {
+          background-color: white;
+          color: #0071e3;
+          border: 1px solid #0071e3;
+          transition: 0.25s;
+        }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .bannersMac{
+        background-image: url('../../../assets/images/MacBannerMobile.png');
+        .bannersMacText{
+            margin-top: 20vh;
+            .bannerMacTitle{
+                font-size: 45px;
+            }
+            .bannerMacSubtitle{
+                font-size: 30px;
+            }
+            .bannerMacPrice{
+                font-family: $font-text-light;
+                font-size: 17px;
+                margin: 25px 0 35px;
+            }
+        }
+    }
+}

@@ -17,7 +17,7 @@ const Categories = () => {
           </NavLink>
           <NavLink to="/Shop/iPhone" className="category" onClick={scrollTopOnClick}>
             <img
-              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202109_GEO_US?wid=200&hei=130&fmt=png-alpha&.v=1630706116000"
+              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202209_GEO_US?wid=200&hei=130&fmt=png-alpha&.v=1661027785546"
               alt="iPhone"
             />
             <p>iPhone</p>
@@ -29,7 +29,7 @@ const Categories = () => {
             />
             <p>iPad</p>
           </NavLink>
-          <NavLink to="/" className="category" onClick={scrollTopOnClick}>
+{/*           <NavLink to="/" className="category" onClick={scrollTopOnClick}>
             <img
               src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202203?wid=200&hei=130&fmt=png-alpha&.v=164505253740"
               alt="Apple Watch"
@@ -42,7 +42,7 @@ const Categories = () => {
               alt="Air Pods"
             />
             <p>AirPods</p>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </>

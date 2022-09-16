@@ -1,0 +1,63 @@
+.bannerIpad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f5f7;
+    padding-top: 20px;
+    img{
+        height: 100vh;
+    }
+    .bannerIpadText{
+        text-align: center;
+        color: $black-color;
+        overflow: hidden;
+        padding-bottom: 20px;
+        margin-left: 170px;
+        .bannerIpadTitle{
+            font-size: 57px;
+        }
+        .bannerIpadDescription{
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .bannerIpadPrice{
+            font-size: 18px;
+            font-family: $font-text-regular;
+            margin-bottom: 30px;
+        }
+        #buyButton{
+            background-color: #0071e3;
+            color: white;
+            border: 1px solid white;
+            font-family: $font-display;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 22px;
+            border: none;
+            width: 80%;
+            cursor: pointer;
+            text-decoration: none;
+            
+            &:hover {
+              background-color: white;
+              color: #0071e3;
+              border: 1px solid #0071e3;
+              transition: 0.25s;
+            }
+            }
+    }
+  
+}
+
+
+@media (max-width:1100px) {
+    .bannerIpad{
+        flex-direction: column;
+        img{
+            margin-left: 60px;
+            height: 70vh;
+        }
+    }
+}

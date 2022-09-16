@@ -1,31 +1,30 @@
 /* UI Settings */
-@import './global.scss';
- 
-
+@import "./global.scss";
 
 /* Components */
 /* Global Components */
-@import '../components/Global/NavBar/NavBar.scss';
-@import '../components/Global/NavBar/CartContainer.scss';
-@import '../components/Global/Footer/Footer.scss';
-@import '../components/Global/PageNotFound/PageNotFound.scss';
-@import '../components/Global/Cart/Cart.scss';
+@import "../components/Global/NavBar/NavBar.scss";
+@import "../components/Global/NavBar/CartContainer.scss";
+@import "../components/Global/Footer/Footer.scss";
+@import "../components/Global/PageNotFound/PageNotFound.scss";
+@import "../components/Global/Cart/Cart.scss";
 
 /* Home Components */
-@import '../components/Home/Banner/Banner.scss';
-@import '../components/Home/Banner/Banner2.scss';
-@import '../components/Home/Categories/Categories.scss';
+@import "../components/Home/Banner/Banner.scss";
+@import "../components/Home/Banner/Banner2.scss";
+@import "../components/Home/Categories/Categories.scss";
 
 
 /* Products Component */
-@import '../components/Products/Banners/BannersIphone.scss';
-@import '../components/Products/ItemDetail.scss';
-@import '../components/Products/Items.scss';
-
+@import '../components/Products/Banners/ServicesBanners.scss';
+@import "../components/Products/Banners/BannersIphone.scss";
+@import "../components/Products/Banners/BannersMac.scss";
+@import "../components/Products/Banners/BannerIpad.scss";
+@import "../components/Products/ItemDetail.scss";
+@import "../components/Products/Items.scss";
 
 /* More */
-@import'../components/Products/ItemCount/ItemCount.scss';
-@import '../utils/Loading.scss';
-
+@import "../components/Products/ItemCount/ItemCount.scss";
+@import "../utils/Loading.scss";
 
 /* Screen */

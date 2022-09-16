@@ -58,34 +58,6 @@
       width: 40%;
     }
   }
-  .servicesContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 150px auto;
-    .servicesIphone{
-        img{
-            width:80px;
-            display: block;
-            margin: 0 auto;
-        }
-        margin: 0 20px;
-        .servicesIphoneText{
-          text-align: center;
-          color: $black-color;
-          h3{
-            font-family: $font-display;
-            font-size: 25px;
-            margin: 12px 0;
-          }
-          p{
-            font-family: $font-text-light;
-            width: 350px;
-          }
-        }
-    }
-  }
 }
 
 @media (max-width: 1366px) {
@@ -122,17 +94,6 @@
 
     .bannerIphone2 {
       height: 25vh;
-    }
-
-    .servicesContainer{
-        flex-direction: column;
-        margin: 100px auto;
-        .servicesIphone{
-            margin: 25px 0;
-            img{
-                width: 60px;
-            }
-        }
     }
   }
 }
@@ -189,15 +150,6 @@
         width: 90vw;
         img{
             width: 80%;
-        }
-    }
-    .servicesContainer{
-        .servicesIphone{
-            .servicesIphoneText{
-                p{
-                    width: 250px;
-                }
-            }
         }
     }
 }
