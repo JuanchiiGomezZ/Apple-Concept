@@ -1,9 +1,10 @@
 import React from "react";
-import { useContext } from "react";
-import { CartContext } from "./CartContext";
+
+
 
 function Cart() {
-  const ctx = useContext(CartContext);
+
+
 
   return (
     <div className="cart">
@@ -180,14 +181,9 @@ function Cart() {
           <h2>$7969</h2>
         </div>
       </div>
-
-      <ul>
-        {ctx.cartList.map((item) => (
-          <li>{item}</li>
-        ))}
-      </ul>
     </div>
   );
+  
 }
 
 export default Cart;

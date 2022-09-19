@@ -2,13 +2,15 @@ import React, {useState} from "react";
 import helper from "../../assets/images/iphone/Helper.jpg";
 import { Link } from "react-router-dom";
 import ItemCount from '../Products/ItemCount/ItemCount'
-
+ import {useCartContext} from '../Global/Cart/CartContext.jsx'
 
 const ItemDetail = ({ data }) => {
   const [goToCart, setGoToCart] = useState(false);
+  const {addProductToCart} = useCartContext();
 
-  const onAdd = () => {
+  const onAdd = (quantity) => {
     setGoToCart(true);
+    addProductToCart(data, quantity);
   };
 
 
@@ -87,7 +89,7 @@ const ItemDetail = ({ data }) => {
             {
               goToCart 
               ? <Link to="/Cart" className="checkOut" href="##">Checkout</Link>
-              : <> <ItemCount/> <button id="addCartButton" onClick={onAdd}>Add to cart</button ></>
+              : <> <ItemCount itemStock={data.stock} onAdd={onAdd}/></>
             }
             
            

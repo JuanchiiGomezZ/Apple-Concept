@@ -13,7 +13,8 @@ const data =[
         image1:'https://i.postimg.cc/fbkwNbb4/iphone14-Pro-1.jpg',
         image2:'https://i.postimg.cc/HnKgd8D5/iphone14-Pro-2-1.jpg',
         image3:'https://i.postimg.cc/44FZzq7d/iphone14-Pro-2-2.jpg',
-        category:'iPhone'
+        category:'iPhone',
+        stock:10,
     },
     {
         new:'New',
@@ -28,7 +29,8 @@ const data =[
         image1:'https://i.postimg.cc/fbkwNbb4/iphone14-Pro-1.jpg',
         image2:'https://i.postimg.cc/HnKgd8D5/iphone14-Pro-2-1.jpg',
         image3:'https://i.postimg.cc/MGGvv0zf/iphone14-Pro-2-2.jpg',
-        category:'iPhone'
+        category:'iPhone',
+        stock:10,
     },
     {
         new:'New',
@@ -44,7 +46,8 @@ const data =[
         image1:'https://i.postimg.cc/RhwkyP2b/iphone14-1.jpg',
         image2:'https://i.postimg.cc/BvqrWYM1/iphone14-2-1.jpg',
         image3:'https://i.postimg.cc/HkzrYv1C/iphone14-2-2.jpg',
-        category:'iPhone'
+        category:'iPhone',
+        stock:10,
     },
     {
         new:'',
@@ -60,7 +63,8 @@ const data =[
         image1:'https://i.postimg.cc/kMY5Ypd2/iPhone1.jpg',
         image2:'https://i.postimg.cc/HxtLXcWC/Iphone2-1.png',
         image3:'https://i.postimg.cc/cC4Lmx6t/i-Phone2-2.png',
-        category:'iPhone'
+        category:'iPhone',
+        stock:10,
     },
     {
         new:'',
@@ -76,7 +80,8 @@ const data =[
         image1:'https://i.postimg.cc/kMY5Ypd2/iPhone1.jpg',
         image2:'https://i.postimg.cc/HxtLXcWC/Iphone2-1.png',
         image3:'https://i.postimg.cc/cC4Lmx6t/i-Phone2-2.png',
-        category:'iPhone'
+        category:'iPhone',
+        stock:10,
     },
     {
         new:'',
@@ -93,6 +98,7 @@ const data =[
         image2:'https://i.postimg.cc/mDvddv7W/i-Phone13-2-1.jpg',
         image3:'https://i.postimg.cc/LsjN0C4c/i-Phone13-2-2.jpg',
         category:'iPhone',
+        stock:10,
     },
     {
         new:'',
@@ -109,7 +115,8 @@ const data =[
         image1:'https://i.postimg.cc/jjpKjQX7/i-Phone12-1.jpg',
         image2:'https://i.postimg.cc/BZzTFjF8/i-Phone12-2-1.jpg',
         image3:'https://i.postimg.cc/kgfctcPx/iphone12-2-2.jpg',
-        category:'iPhone'
+        category:'iPhone',
+        stock:10,
     },
     {
         new:'',
@@ -127,6 +134,7 @@ const data =[
         image2:'https://i.postimg.cc/BZzTFjF8/i-Phone12-2-1.jpg',
         image3:'https://i.postimg.cc/kgfctcPx/iphone12-2-2.jpg',
         category:'iPhone',
+        stock:10,
     },
     {
         new:'',
@@ -141,6 +149,7 @@ const data =[
         image2:'https://i.postimg.cc/TYWrJTjt/iphone-SE-2-1.jpg',
         image3:'https://i.postimg.cc/t4p1HQf5/iphone-SE-2-2.jpg',
         category:'iPhone',
+        stock:10,
     },
     {
         new:'',
@@ -153,6 +162,7 @@ const data =[
         color3:'graphite circle',
         image1:'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-macbook-air-gold-m1-202010?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1634145607000',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -166,6 +176,7 @@ const data =[
         color4:'gray circle',
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1653084303665',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -177,6 +188,7 @@ const data =[
         color2:'gray circle',
         image1:'https://es.digitaltrends.com/wp-content/uploads/2019/11/apple_16-inch-macbook-pro_111319.jpg?p=1',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -191,6 +203,7 @@ const data =[
         color5:'gray circle',
         image1:'https://ar.oneclickstore.com/wp-content/uploads/2021/08/iMac24_2P_SIL_001.jpg',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -201,6 +214,7 @@ const data =[
         color1:'gray circle',
         image1:'https://www.apple.com/newsroom/images/product/mac/standard/Apple-Studio-Display-Magic-Trackpad-Keyboard-Mouse-220308_big.jpg.slideshow-xlarge_2x.jpg',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -211,6 +225,7 @@ const data =[
         color1:'gray circle',
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/pro-display-gallery1-201909?wid=2000&hei=1536&fmt=jpeg&qlt=95&.v=1574201024213',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -221,6 +236,7 @@ const data =[
         color1:'gray circle',
         image1:'https://www.macstore.com.pa/ccstore/v1/images/?source=/file/v5051881803036070256/products/Mac-Mini-M1-Gris.jpg',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -231,6 +247,7 @@ const data =[
         color1:'gray circle',
         image1:'https://media.revistagq.com/photos/62289806eb46c38200386be7/master/w_1960,h_1306,c_limit/Apple-Mac-Studio-front-220308.jpg',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -241,6 +258,7 @@ const data =[
         color1:'gray circle',
         image1:'https://www.macstoreuk.com/wp-content/uploads/2020/07/Mac-Pro.jpg',
         category:'Mac',
+        stock:10,
     },
     {
         new:'',
@@ -252,6 +270,7 @@ const data =[
         color2:'graphite circle',
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_MX_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617923546000',
         category:'iPad',
+        stock:10,
     },
     {
         new:'',
@@ -263,6 +282,7 @@ const data =[
         color2:'graphite circle',
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_MX_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617923546000',
         category:'iPad',
+        stock:10,
     },
     {
         new:'New',
@@ -277,6 +297,7 @@ const data =[
         color5:'gray circle',
         image1:'https://i.postimg.cc/fWrPd2dv/ipadAir.png',
         category:'iPad',
+        stock:10,
     },
     {
         new:'',
@@ -288,6 +309,7 @@ const data =[
         color2:'gray circle',
         image1:'https://i.postimg.cc/RCtH4qvL/ipad-Classic.png',
         category:'iPad',
+        stock:10,
     },
     {
         new:'',
@@ -301,6 +323,7 @@ const data =[
         color4:'gold circle',
         image1:'https://i.postimg.cc/BbD3PdmX/iPadMini.png',
         category:'iPad',
+        stock:10,
     },
 ]
 
