@@ -1,12 +1,18 @@
 import React from "react";
 import shoppingBag from "../../../assets/images/shopping-bag.png";
+import { useCartContext } from "../Cart/CartContext";
 
+const CartWidget = () => {
+  const { totalProducts } = useCartContext();
 
-const CartWidget = (props) => {
   return (
     <div className="logoCart" onClick={openCart}>
       <img src={shoppingBag} alt="Cart" />
-      <p>{props.cartQuantity}</p>
+      {
+        (totalProducts() === 0)
+        ? <p>0</p>
+        : <p>{totalProducts()}</p>
+      }
     </div>
   );
 };  

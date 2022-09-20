@@ -1,12 +1,9 @@
 function Loading() {
-    return (
-        <div className="loader">
-            <div className="loaderloader">
-                <div className="rueda"></div>
-            </div>
-            <div className="loadertitle">Cargando...</div>
-        </div>
-    );
+  return (
+    <div className="loaderContainer">
+      <span class="loader"></span>
+    </div>
+  );
 }
 
 export default Loading;

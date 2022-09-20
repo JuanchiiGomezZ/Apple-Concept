@@ -18,7 +18,7 @@ const ItemsListContainer = () => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
         resolve(dataProducts);
-      },0);
+      },3000);
     });
     if (categoryId) {
       getData.then((res) =>
@@ -69,7 +69,7 @@ const ItemsListContainer = () => {
           <ServicesBanner/>
         </>
       ) : (
-        <Loading />
+        <Loading/>
       )}
     </>
   );

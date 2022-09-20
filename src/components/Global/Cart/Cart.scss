@@ -3,7 +3,6 @@
   height: 1px;
   background-color: rgba(62, 62, 62, 0.328);
 }
-
 .cart {
   width: 70%;
   margin: 100px auto;
@@ -18,170 +17,10 @@
       font-size: 17px;
     }
   }
-
-  
   .productsInCartContainer {
     width: 95%;
     margin: 100px auto 50px;
-    .productBoxInCart {
-      .productInCart {
-        display: flex;
-        width: 100%;
-        margin: 80px 0 50px;
-        img {
-          width: 200px;
-          height: 170px;
-        }
-        .productDescription {
-          width: 80%;
-          margin-left: 50px;
-          .productHead {
-            margin-bottom: 40px;
-            .productHeadMain {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            }
-            .productHeadSecond {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              color: #646464;
-              font-family: $font-text-light;
-              font-size: 15px;
-              margin-top: 10px;
-            }
-          }
-          .productFeatures {
-            margin: 30px auto 0;
-            font-family: $font-text-regular;
-            font-size: 18px;
-            font-weight: 600;
-            color: #313131;
-            .color {
-              display: flex;
-              align-items: center;
-              margin-bottom: 10px;
-              .circle {
-                width: 25px;
-                height: 25px;
-                border-radius: 50%;
-                margin: 0 5px;
-              }
-              .green {
-                background-color: #576856;
-              }
-              .silver {
-                background-color: #c9c9c985;
-              }
-              .gold {
-                background-color: #f7e0be;
-              }
-              .graphite {
-                background-color: #61605d;
-              }
-              .blue {
-                background-color: #aec7dd;
-              }
-              .red {
-                background-color: #c92434;
-              }
-              .pink {
-                background-color: #ffc5b9;
-              }
-              .purple {
-                background-color: #a89ce8;
-              }
-              .creamGreen {
-                background-color: #ade0cd;
-              }
-              .yellow {
-                background-color: #ffe681;
-              }
-              .deepPurple {
-                background-color: #44394e;
-              }
-              .gray {
-                background-color: silver;
-              }
-            }
-          }
-        }
-        .appleCare {
-          margin: 30px 0;
-          .appleCareHead {
-            display: flex;
-            justify-content: space-between;
-            .appleCareTitle {
-              display: flex;
-              align-items: center;
-              font-size: 19px;
-              font-family: $font-text-regular;
-              font-weight: bold;
-              i {
-                margin-right: 7px;
-                color: red;
-              }
-            }
-            .add {
-              color: $lightBlue-color;
-              font-size: 18px;
-              cursor: pointer;
-              &:hover {
-                font-weight: bold;
-                animation: 0.3s;
-              }
-            }
-          }
-        }
-        .appleCareDescription {
-          margin-top: 5px;
-          margin-left: 20px;
-          line-height: 25px;
-          font-size: 15px;
-          p {
-            font-family: $font-text-light;
-          }
-          a {
-            text-decoration: none;
-            color: $lightBlue-color;
-            &:hover {
-              font-weight: bold;
-              animation: 0.3s;
-            }
-          }
-        }
-        .shipping {
-          margin: 30px 0;
-          .shippingTitle {
-            display: flex;
-            align-items: center;
-            font-size: 19px;
-            font-family: $font-text-regular;
-            font-weight: bold;
-            i {
-              margin-right: 7px;
-              color: #4a4a4a;
-            }
-          }
-          .shippingDescription {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .shippingWay {
-              display: flex;
-              align-items: center;
-              margin-top: 20px;
-              p {
-                font-size: 15px;
-                font-family: $font-text-light;
-                margin-left: 7px;
-              }
-            }
-          }
-        }
-      }
-    }
+    
   }
   .totalContainer {
     width: 73%;

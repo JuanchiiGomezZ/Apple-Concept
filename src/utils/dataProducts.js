@@ -15,6 +15,7 @@ const data =[
         image3:'https://i.postimg.cc/44FZzq7d/iphone14-Pro-2-2.jpg',
         category:'iPhone',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-deeppurple-select?'
     },
     {
         new:'New',
@@ -31,6 +32,7 @@ const data =[
         image3:'https://i.postimg.cc/MGGvv0zf/iphone14-Pro-2-2.jpg',
         category:'iPhone',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-deeppurple-select?'
     },
     {
         new:'New',
@@ -48,6 +50,7 @@ const data =[
         image3:'https://i.postimg.cc/HkzrYv1C/iphone14-2-2.jpg',
         category:'iPhone',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-purple-select-202209?'
     },
     {
         new:'',
@@ -65,6 +68,7 @@ const data =[
         image3:'https://i.postimg.cc/cC4Lmx6t/i-Phone2-2.png',
         category:'iPhone',
         stock:10,
+        imageCart:'https://i.postimg.cc/fyNSQWVn/i-Phone13-Pro-Cart.png'
     },
     {
         new:'',
@@ -82,6 +86,7 @@ const data =[
         image3:'https://i.postimg.cc/cC4Lmx6t/i-Phone2-2.png',
         category:'iPhone',
         stock:10,
+        imageCart:'https://i.postimg.cc/fyNSQWVn/i-Phone13-Pro-Cart.png'
     },
     {
         new:'',
@@ -99,6 +104,7 @@ const data =[
         image3:'https://i.postimg.cc/LsjN0C4c/i-Phone13-2-2.jpg',
         category:'iPhone',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-green-select?'
     },
     {
         new:'',
@@ -117,6 +123,7 @@ const data =[
         image3:'https://i.postimg.cc/kgfctcPx/iphone12-2-2.jpg',
         category:'iPhone',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?'
     },
     {
         new:'',
@@ -135,6 +142,7 @@ const data =[
         image3:'https://i.postimg.cc/kgfctcPx/iphone12-2-2.jpg',
         category:'iPhone',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?'
     },
     {
         new:'',
@@ -150,6 +158,7 @@ const data =[
         image3:'https://i.postimg.cc/t4p1HQf5/iphone-SE-2-2.jpg',
         category:'iPhone',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-midnight-select-202203?'
     },
     {
         new:'',
@@ -163,6 +172,7 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-macbook-air-gold-m1-202010?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1634145607000',
         category:'Mac',
         stock:10,
+        imageCart:'https://i.postimg.cc/wjw66qG8/Mac-Air-M1-Cart.jpg'
     },
     {
         new:'',
@@ -177,6 +187,7 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1653084303665',
         category:'Mac',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?'
     },
     {
         new:'',
@@ -189,11 +200,12 @@ const data =[
         image1:'https://es.digitaltrends.com/wp-content/uploads/2019/11/apple_16-inch-macbook-pro_111319.jpg?p=1',
         category:'Mac',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202110?'
     },
     {
         new:'',
         name:'MacBook Pro 16”',
-        img:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-40-imac-24-202108?wid=490&hei=500&fmt=jpeg&qlt=95&.v=1625868688000',
+        img:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-24-touch-id-blue-gallery-1?wid=2000&hei=1536&fmt=jpeg&qlt=95&.v=1617486478000',
         price:1299,
         id:501,
         color1:'red circle',
@@ -204,6 +216,7 @@ const data =[
         image1:'https://ar.oneclickstore.com/wp-content/uploads/2021/08/iMac24_2P_SIL_001.jpg',
         category:'Mac',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-24-blue-selection-hero-202104?'
     },
     {
         new:'',
@@ -215,6 +228,7 @@ const data =[
         image1:'https://www.apple.com/newsroom/images/product/mac/standard/Apple-Studio-Display-Magic-Trackpad-Keyboard-Mouse-220308_big.jpg.slideshow-xlarge_2x.jpg',
         category:'Mac',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMYQ3?'
     },
     {
         new:'',
@@ -226,6 +240,7 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/pro-display-gallery1-201909?wid=2000&hei=1536&fmt=jpeg&qlt=95&.v=1574201024213',
         category:'Mac',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/pro-display-hero?'
     },
     {
         new:'',
@@ -237,6 +252,7 @@ const data =[
         image1:'https://www.macstore.com.pa/ccstore/v1/images/?source=/file/v5051881803036070256/products/Mac-Mini-M1-Gris.jpg',
         category:'Mac',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-mini-hero-202011?',
     },
     {
         new:'',
@@ -248,6 +264,7 @@ const data =[
         image1:'https://media.revistagq.com/photos/62289806eb46c38200386be7/master/w_1960,h_1306,c_limit/Apple-Mac-Studio-front-220308.jpg',
         category:'Mac',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-studio-select-202203?',
     },
     {
         new:'',
@@ -259,6 +276,7 @@ const data =[
         image1:'https://www.macstoreuk.com/wp-content/uploads/2020/07/Mac-Pro.jpg',
         category:'Mac',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-pro-hero-cto?',
     },
     {
         new:'',
@@ -271,6 +289,7 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_MX_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617923546000',
         category:'iPad',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104?'
     },
     {
         new:'',
@@ -283,6 +302,7 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_MX_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617923546000',
         category:'iPad',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-11-select-wifi-spacegray-202104?'
     },
     {
         new:'New',
@@ -298,6 +318,7 @@ const data =[
         image1:'https://i.postimg.cc/fWrPd2dv/ipadAir.png',
         category:'iPad',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-pink-202203?'
     },
     {
         new:'',
@@ -310,6 +331,7 @@ const data =[
         image1:'https://i.postimg.cc/RCtH4qvL/ipad-Classic.png',
         category:'iPad',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2021-hero-silver-wifi-select?'
     },
     {
         new:'',
@@ -324,6 +346,7 @@ const data =[
         image1:'https://i.postimg.cc/BbD3PdmX/iPadMini.png',
         category:'iPad',
         stock:10,
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-select-wifi-purple-202109?'
     },
 ]
 

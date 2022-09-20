@@ -1,5 +1,5 @@
 .active{
-  top: 46px;
+  top: 50px;
   transition: 0.5s;
 }
 .hidden{
@@ -7,6 +7,12 @@
   transition: 0.5s;
 }
 
+.emptyCart{
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content:center
+}
 
 .cartContainer {
   min-height: 350px;
@@ -15,7 +21,6 @@
   position: absolute;
   right: 11vw;
   position: fixed;
-
   background-color: white;
   border: #1d1d1f61 1px solid;
   border-radius: 20px;
@@ -28,7 +33,8 @@
   }
   .cartProductsContainer {
     img {
-      width: 80px;
+      width: 60px;
+      margin-right: 10px;
     }
     .productInCart {
       margin: 15px 0;
@@ -38,9 +44,8 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        .nameProductInCart {
+        p{
           font-family: $font-text-regular;
-          font-size: 17px;
           color: #1d1d1f;
         }
       }
@@ -95,6 +100,9 @@
     width: 100%;
     .cartProductsContainer {
       .productInCart {
+        p{
+          font-size: 20px;
+        }
         .productBoxInCart {
           margin: 0;
           img {
