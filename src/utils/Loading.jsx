@@ -1,7 +1,7 @@
 function Loading() {
   return (
     <div className="loaderContainer">
-      <span class="loader"></span>
+      <span className="loader"></span>
     </div>
   );
 }

@@ -16,7 +16,7 @@ const ItemCartNav = () => {
     return (
       <>
         {cart.map((product) => (
-          <div className="productInCart">
+          <div className="productInCart" key={product.id}>
             <div className="productBoxInCart">
               <img src={product.imageCart} alt="" />
               <div className="nameProductInCart">
