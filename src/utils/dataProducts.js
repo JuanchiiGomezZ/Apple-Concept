@@ -15,7 +15,7 @@ const data =[
         image3:'https://i.postimg.cc/44FZzq7d/iphone14-Pro-2-2.jpg',
         category:'iPhone',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-deeppurple-select?'
+        imageCart:'https://i.postimg.cc/VvfrWm6S/iphone14-Pro-Cart.png',
     },
     {
         new:'New',
@@ -32,7 +32,7 @@ const data =[
         image3:'https://i.postimg.cc/MGGvv0zf/iphone14-Pro-2-2.jpg',
         category:'iPhone',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-deeppurple-select?'
+        imageCart:'https://i.postimg.cc/VvfrWm6S/iphone14-Pro-Cart.png',
     },
     {
         new:'New',
@@ -184,7 +184,7 @@ const data =[
         color2:'gold circle',
         color3:'graphite circle',
         color4:'gray circle',
-        image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1653084303665',
+        image1:'https://sneakerhousearg.com/wp-content/uploads/2022/06/Apple-WWDC22-MacBook-Air-hero-220606.jpg',
         category:'Mac',
         stock:10,
         imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?'
@@ -343,10 +343,10 @@ const data =[
         color2:'pink circle',
         color3:'purple circle',
         color4:'gold circle',
-        image1:'https://i.postimg.cc/BbD3PdmX/iPadMini.png',
+        image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-select-wifi-purple-202109?wid=470&hei=556&fmt=png-alpha&.v=1629840735000',
         category:'iPad',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-select-wifi-purple-202109?'
+        imageCart:'https://i.postimg.cc/V6B0tdYQ/ipad-Mini-Cart.png',
     },
 ]
 

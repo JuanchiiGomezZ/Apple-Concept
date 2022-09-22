@@ -293,6 +293,7 @@
     }
     .checkOut{
       width: 90%;
+      
     }
   }
 }
@@ -366,10 +367,11 @@
         }
         #addCartButton {
           width: 90%;
-          margin-top: 25px;
+          margin-top: 20px;
         }
         .checkOut {
           width: 90%;
+          
         }
       }
     }
@@ -434,6 +436,10 @@
           justify-content: center;
           align-items: center;
           margin: 25px auto;
+        }
+        .checkOut{
+          margin: 25px auto;
+          
         }
       }
     }

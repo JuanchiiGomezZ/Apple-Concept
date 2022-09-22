@@ -104,7 +104,6 @@
 }
 
 @media (max-width:900px){
-
   .emptyContainer{
     .totalContainer{
       width: 90%;
@@ -117,10 +116,17 @@
       .productBoxInCart{
         .productInCart{
           flex-direction: column;
-          img{
-            margin: 0 auto;
+          .productImage{
+            width: 100%;
+            img{
+              margin: 0 auto;
+              display: block;
+              width: 250px;
+            }
           }
+        
           .productDescription{
+            margin: 0 auto;
             .productHead{
               .productHeadMain{
                 flex-wrap: wrap;
@@ -131,6 +137,9 @@
                   h2{
                     font-size: 30px;
                   }
+                }
+                .productQuantity{
+                  margin-left: 45px;
                 }
               }
             }
