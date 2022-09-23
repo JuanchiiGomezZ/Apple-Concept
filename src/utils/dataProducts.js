@@ -16,6 +16,23 @@ const data =[
         category:'iPhone',
         stock:10,
         imageCart:'https://i.postimg.cc/VvfrWm6S/iphone14-Pro-Cart.png',
+
+        chipImg:'https://i.postimg.cc/dt6zQcZW/A16-Bionic.png',
+        chip:'A16 Bionic',
+        screen:"6.7''",
+        screenDesc:'All-screen OLED',
+        cameraImg:'https://i.postimg.cc/wjBn74h9/Camera-Iphone.png',
+        camera:'48 MP | Telephoto, Wide, UltraWide',
+        battery:'Up to 29 hours of video playback',
+
+        classStorage1:'gb',
+        classStorage2:'gb',
+        classStorage3:'gb',
+        classStorage4:'gb',
+        storage1:'128GB',
+        storage2:'256GB',
+        storage3:'512GB',
+        storage4:'1TB',
     },
     {
         new:'New',
@@ -33,6 +50,20 @@ const data =[
         category:'iPhone',
         stock:10,
         imageCart:'https://i.postimg.cc/VvfrWm6S/iphone14-Pro-Cart.png',
+
+        chipImg:'https://i.postimg.cc/dt6zQcZW/A16-Bionic.png',
+        chip:'A16 Bionic',
+        screen:"6.1''",
+        screenDesc:'Super Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/wjBn74h9/Camera-Iphone.png',
+        camera:'48 MP | Telephoto, Wide, UltraWide',
+        battery:'Up to 29 hours of video playback',
+
+
+        storage1:'128GB',
+        storage2:'256GB',
+        storage3:'512GB',
+        storage4:'1TB',
     },
     {
         new:'New',
@@ -50,7 +81,21 @@ const data =[
         image3:'https://i.postimg.cc/HkzrYv1C/iphone14-2-2.jpg',
         category:'iPhone',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-purple-select-202209?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-purple-select-202209?',
+        
+        chipImg:'https://i.postimg.cc/63kfpRcx/A15-Bionic.png',
+        chip:'A15 Bionic',
+        screen:"6.1''",
+        screenDesc:'Super Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/t4mwPd5W/Camera-Iphone2.png',
+        camera:'12 MP | Telephoto, UltraWide',
+        battery:'Up to 26 hours of video playback',
+
+
+        classStorage4:'hide',
+        storage1:'128GB',
+        storage2:'256GB',
+        storage3:'512GB',
     },
     {
         new:'',
@@ -68,7 +113,20 @@ const data =[
         image3:'https://i.postimg.cc/cC4Lmx6t/i-Phone2-2.png',
         category:'iPhone',
         stock:10,
-        imageCart:'https://i.postimg.cc/fyNSQWVn/i-Phone13-Pro-Cart.png'
+        imageCart:'https://i.postimg.cc/fyNSQWVn/i-Phone13-Pro-Cart.png',
+
+        chipImg:'https://i.postimg.cc/63kfpRcx/A15-Bionic.png',
+        chip:'A15 Bionic',
+        screen:"6.7''",
+        screenDesc:'Super Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/wjBn74h9/Camera-Iphone.png',
+        camera:'12 MP | Telephoto, Wide, UltraWide',
+        battery:'Up to 28 hours of video playback',
+
+        storage1:'128GB',
+        storage2:'256GB',
+        storage3:'512GB',
+        storage4:'1TB',
     },
     {
         new:'',
@@ -86,7 +144,21 @@ const data =[
         image3:'https://i.postimg.cc/cC4Lmx6t/i-Phone2-2.png',
         category:'iPhone',
         stock:10,
-        imageCart:'https://i.postimg.cc/fyNSQWVn/i-Phone13-Pro-Cart.png'
+        imageCart:'https://i.postimg.cc/fyNSQWVn/i-Phone13-Pro-Cart.png',
+
+        chipImg:'https://i.postimg.cc/63kfpRcx/A15-Bionic.png',
+        chip:'A15 Bionic',
+        screen:"6.1''",
+        screenDesc:'Super Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/wjBn74h9/Camera-Iphone.png',
+        camera:'12 MP | Telephoto, Wide, UltraWide',
+        battery:'Up to 28 hours of video playback',
+
+        storage1:'128GB',
+        storage2:'256GB',
+        storage3:'512GB',
+        storage4:'1TB',
+        
     },
     {
         new:'',
@@ -104,7 +176,22 @@ const data =[
         image3:'https://i.postimg.cc/LsjN0C4c/i-Phone13-2-2.jpg',
         category:'iPhone',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-green-select?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-green-select?',
+
+
+        chipImg:'https://i.postimg.cc/63kfpRcx/A15-Bionic.png',
+        chip:'A15 Bionic',
+        screen:"6.1''",
+        screenDesc:'Super Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/t4mwPd5W/Camera-Iphone2.png',
+        camera:'12 MP | Telephoto, UltraWide',
+        battery:'Up to 19 hours of video playback',
+
+        
+        classStorage4:'hide',
+        storage1:'128GB',
+        storage2:'256GB',
+        storage3:'512GB',
     },
     {
         new:'',
@@ -123,7 +210,21 @@ const data =[
         image3:'https://i.postimg.cc/kgfctcPx/iphone12-2-2.jpg',
         category:'iPhone',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?',
+
+        chipImg:'https://i.postimg.cc/8PwnDfT9/A14-Bionic.png',
+        chip:'A14 Bionic',
+        screen:"6.1''",
+        screenDesc:'Super Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/DzJDcWjD/Camera-Iphone2-2.png',
+        camera:'12 MP | Telephoto, UltraWide',
+        battery:'Up to 17 hours of video playback',
+
+        
+        classStorage4:'hide',
+        storage1:'64GB',
+        storage2:'128GB',
+        storage3:'256GB',
     },
     {
         new:'',
@@ -142,7 +243,20 @@ const data =[
         image3:'https://i.postimg.cc/kgfctcPx/iphone12-2-2.jpg',
         category:'iPhone',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?',
+
+        chipImg:'https://i.postimg.cc/8PwnDfT9/A14-Bionic.png',
+        chip:'A14 Bionic',
+        screen:"5.4''",
+        screenDesc:'Super Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/DzJDcWjD/Camera-Iphone2-2.png',
+        camera:'12 MP | Telephoto, UltraWide',
+        battery:'Up to 17 hours of video playback',
+
+        classStorage4:'hide',
+        storage1:'64GB',
+        storage2:'128GB',
+        storage3:'256GB',
     },
     {
         new:'',
@@ -158,7 +272,20 @@ const data =[
         image3:'https://i.postimg.cc/t4p1HQf5/iphone-SE-2-2.jpg',
         category:'iPhone',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-midnight-select-202203?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-midnight-select-202203?',
+
+        chipImg:'https://i.postimg.cc/63kfpRcx/A15-Bionic.png',
+        chip:'A15 Bionic',
+        screen:"4.7''",
+        screenDesc:'Retina HD Display',
+        cameraImg:'https://i.postimg.cc/qvRD7BRR/Camera-Iphone-SE.png',
+        camera:'12 MP | Telephoto',
+        battery:'Up to 15 hours of video playback',
+
+        classStorage4:'hide',
+        storage1:'64GB',
+        storage2:'128GB',
+        storage3:'256GB',
     },
     {
         new:'',
@@ -172,7 +299,22 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/refurb-macbook-air-gold-m1-202010?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1634145607000',
         category:'Mac',
         stock:10,
-        imageCart:'https://i.postimg.cc/wjw66qG8/Mac-Air-M1-Cart.jpg'
+        imageCart:'https://i.postimg.cc/wjw66qG8/Mac-Air-M1-Cart.jpg',
+
+        chipImg:'https://i.postimg.cc/Y9VSLCNx/M1Chip.png',
+        chip:'Apple M1 chip',
+        screenImg:'https://i.postimg.cc/yxBF5j55/Screen-Laptop.png',
+        screen:"13.3''",
+        screenDesc:'Retina Display',
+        ram:'16 GB',
+        cpu:'8-core',
+        gpu:'7-core',
+        battery:'18 hrs',
+
+        storage1:'256GB SSD',
+        storage2:'512GB SSD ',
+        storage3:'1TB SSD',
+        storage4:'2TB SSD',
     },
     {
         new:'',
@@ -187,7 +329,22 @@ const data =[
         image1:'https://sneakerhousearg.com/wp-content/uploads/2022/06/Apple-WWDC22-MacBook-Air-hero-220606.jpg',
         category:'Mac',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?',
+
+        chipImg:'https://i.postimg.cc/SRMx6bDb/M2Chip.png',
+        chip:'Apple M2 chip',
+        screenImg:'https://i.postimg.cc/yxBF5j55/Screen-Laptop.png',
+        screen:"13.3''",
+        screenDesc:'Retina Display',
+        ram:'24 GB',
+        cpu:'8-core',
+        gpu:'10-core',
+        battery:'18 hrs',
+
+        classStorage4:'hide',
+        storage1:'512GB',
+        storage2:'1TB',
+        storage3:'2TB',
     },
     {
         new:'',
@@ -200,11 +357,26 @@ const data =[
         image1:'https://es.digitaltrends.com/wp-content/uploads/2019/11/apple_16-inch-macbook-pro_111319.jpg?p=1',
         category:'Mac',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202110?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202110?',
+
+        chipImg:'https://i.postimg.cc/pdf43WLL/intel-1.png',
+        chip:'Core i9 processor',
+        screenImg:'',
+        screen:"16''",
+        screenDesc:'Retina Display',
+        ram:'64 GB',
+        cpu:'8-core',
+        gpu:'AMD',
+        battery:'11 hrs',
+
+        storage1:'1TB SSD',
+        storage2:'2TB SSD ',
+        storage3:'4TB SSD',
+        storage4:'8TB SSD',
     },
     {
         new:'',
-        name:'MacBook Pro 16”',
+        name:'iMac 24”',
         img:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-24-touch-id-blue-gallery-1?wid=2000&hei=1536&fmt=jpeg&qlt=95&.v=1617486478000',
         price:1299,
         id:501,
@@ -216,7 +388,23 @@ const data =[
         image1:'https://ar.oneclickstore.com/wp-content/uploads/2021/08/iMac24_2P_SIL_001.jpg',
         category:'Mac',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-24-blue-selection-hero-202104?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-24-blue-selection-hero-202104?',
+
+        chipImg:'https://i.postimg.cc/Y9VSLCNx/M1Chip.png',
+        chip:'Apple M1 chip',
+        screenImg:'https://i.postimg.cc/cCmQNYGJ/Screen-Monitor.png',
+        screen:"24''",
+        screenDesc:'4.5K Retina Display',
+        ram:'16 GB',
+        cpu:'8-core',
+        gpu:'8-core',
+        battery:'-',
+
+        
+        classStorage4:'hide',
+        storage1:'512GB',
+        storage2:'1TB',
+        storage3:'2TB',
     },
     {
         new:'',
@@ -228,7 +416,8 @@ const data =[
         image1:'https://www.apple.com/newsroom/images/product/mac/standard/Apple-Studio-Display-Magic-Trackpad-Keyboard-Mouse-220308_big.jpg.slideshow-xlarge_2x.jpg',
         category:'Mac',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMYQ3?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MMYQ3?',
+        hide:'hide'
     },
     {
         new:'',
@@ -240,7 +429,8 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/pro-display-gallery1-201909?wid=2000&hei=1536&fmt=jpeg&qlt=95&.v=1574201024213',
         category:'Mac',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/pro-display-hero?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/pro-display-hero?',
+        hide:'hide'
     },
     {
         new:'',
@@ -253,6 +443,21 @@ const data =[
         category:'Mac',
         stock:10,
         imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-mini-hero-202011?',
+
+        chipImg:'https://i.postimg.cc/Y9VSLCNx/M1Chip.png',
+        chip:'Apple M1 chip',
+        screenImg:'https://i.postimg.cc/cCmQNYGJ/Screen-Monitor.png',
+        screen:"-",
+        screenDesc:'',
+        ram:'16 GB',
+        cpu:'8-core',
+        gpu:'8-core',
+        battery:'-',
+
+        classStorage4:'hide',
+        storage1:'512GB',
+        storage2:'1TB',
+        storage3:'2TB',
     },
     {
         new:'',
@@ -265,6 +470,21 @@ const data =[
         category:'Mac',
         stock:10,
         imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-studio-select-202203?',
+
+        chipImg:'https://i.postimg.cc/mZKDbjS1/M1-Ultra-Chip.png',
+        chip:'Apple M1 ULTRA chip',
+        screenImg:'https://i.postimg.cc/cCmQNYGJ/Screen-Monitor.png',
+        screen:"-",
+        screenDesc:'',
+        ram:'128 GB',
+        cpu:'20-core',
+        gpu:'64-core',
+        battery:'-',
+
+        storage1:'1TB SSD',
+        storage2:'2TB SSD ',
+        storage3:'4TB SSD',
+        storage4:'8TB SSD',
     },
     {
         new:'',
@@ -277,6 +497,21 @@ const data =[
         category:'Mac',
         stock:10,
         imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-pro-hero-cto?',
+
+        chipImg:'https://i.postimg.cc/pdf43WLL/intel-1.png',
+        chip:'Xeon W processor',
+        screenImg:'https://i.postimg.cc/cCmQNYGJ/Screen-Monitor.png',
+        screen:"-",
+        screenDesc:'',
+        ram:'768 GB',
+        cpu:'28-core',
+        gpu:'AMD',
+        battery:'11 hrs',
+
+        storage1:'1TB SSD',
+        storage2:'2TB SSD ',
+        storage3:'4TB SSD',
+        storage4:'8TB SSD',
     },
     {
         new:'',
@@ -289,7 +524,22 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_MX_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617923546000',
         category:'iPad',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104?',
+
+        chipImg:'https://i.postimg.cc/Y9VSLCNx/M1Chip.png',
+        chip:'M1 Apple chip',
+        screen:"12.9''",
+        screenDesc:'Liquid Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/63d5Q2fJ/Camera-Ipad2.png',
+        camera:'12 MP | Telephoto, UltraWide',
+        battery:'Up to 10 hours of video playback',
+        chargerImg:'https://i.postimg.cc/mgMx4Ngj/Charge-Ipad-Pro.png',
+        charger:'USB-C Fast-Charge',
+
+        storage1:'128GB',
+        storage2:'256GB',
+        storage3:'512GB',
+        storage4:'1TB',
     },
     {
         new:'',
@@ -302,7 +552,23 @@ const data =[
         image1:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_MX_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617923546000',
         category:'iPad',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-11-select-wifi-spacegray-202104?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-11-select-wifi-spacegray-202104?',
+
+        chipImg:'https://i.postimg.cc/Y9VSLCNx/M1Chip.png',
+        chip:'M1 Apple chip',
+        screen:"11''",
+        screenDesc:'Liquid Retina XDR Display',
+        cameraImg:'https://i.postimg.cc/63d5Q2fJ/Camera-Ipad2.png',
+        camera:'12 MP | Telephoto, UltraWide',
+        battery:'Up to 10 hours of video playback',
+        chargerImg:'https://i.postimg.cc/mgMx4Ngj/Charge-Ipad-Pro.png',
+        charger:'USB-C Fast-Charge',
+
+        storage1:'128GB',
+        storage2:'256GB',
+        storage3:'512GB',
+        storage4:'1TB',
+        
     },
     {
         new:'New',
@@ -318,7 +584,23 @@ const data =[
         image1:'https://i.postimg.cc/fWrPd2dv/ipadAir.png',
         category:'iPad',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-pink-202203?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-wifi-pink-202203?',
+
+        chipImg:'https://i.postimg.cc/Y9VSLCNx/M1Chip.png',
+        chip:'M1 Apple chip',
+        screen:"10.9''",
+        screenDesc:'Liquid Retina Display',
+        cameraImg:'https://i.postimg.cc/0Qgyxdm0/Camera-Ipad1.png',
+        camera:'12 MP | Telephoto, Wide',
+        battery:'Up to 10 hours of video playback',
+        chargerImg:'https://i.postimg.cc/vH4FqdRp/Charge-Ipad-Mid.png',
+        charger:'USB-C connector',
+
+        classStorage3:'hide',
+        classStorage4:'hide',
+        storage1:'64GB',
+        storage2:'128GB',
+
     },
     {
         new:'',
@@ -331,7 +613,22 @@ const data =[
         image1:'https://i.postimg.cc/RCtH4qvL/ipad-Classic.png',
         category:'iPad',
         stock:10,
-        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2021-hero-silver-wifi-select?'
+        imageCart:'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2021-hero-silver-wifi-select?',
+
+        chipImg:'https://i.postimg.cc/8PwnDfT9/A14-Bionic.png',
+        chip:'A14 Bionic',
+        screen:"10.2''",
+        screenDesc:'Retina Display',
+        cameraImg:'https://i.postimg.cc/0Qgyxdm0/Camera-Ipad1.png',
+        camera:'8 MP | Telephoto',
+        battery:'Up to 10 hours of video playback',
+        chargerImg:'https://i.postimg.cc/QxvLvnhV/Charge-Ipad-Low.png',
+        charger:'Lighting connector',
+
+        classStorage3:'hide',
+        classStorage4:'hide',
+        storage1:'64GB',
+        storage2:'128GB',
     },
     {
         new:'',
@@ -347,6 +644,21 @@ const data =[
         category:'iPad',
         stock:10,
         imageCart:'https://i.postimg.cc/V6B0tdYQ/ipad-Mini-Cart.png',
+
+        chipImg:'https://i.postimg.cc/63kfpRcx/A15-Bionic.png',
+        chip:'A15 Bionic',
+        screen:"8.3''",
+        screenDesc:'Liquid Retina Display',
+        cameraImg:'https://i.postimg.cc/0Qgyxdm0/Camera-Ipad1.png',
+        camera:'12 MP | Wide camera',
+        battery:'Up to 10 hours of video playback',
+        chargerImg:'https://i.postimg.cc/vH4FqdRp/Charge-Ipad-Mid.png',
+        charger:'USB-C connector',
+
+        classStorage3:'hide',
+        classStorage4:'hide',
+        storage1:'64GB',
+        storage2:'128GB',
     },
 ]
 

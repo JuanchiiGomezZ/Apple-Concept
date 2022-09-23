@@ -2,7 +2,10 @@ import React, {useState} from "react";
 import helper from "../../assets/images/iphone/Helper.jpg";
 import { Link } from "react-router-dom";
 import ItemCount from '../Products/ItemCount/ItemCount'
- import {useCartContext} from '../Global/Cart/CartContext.jsx'
+import {useCartContext} from '../Global/Cart/CartContext.jsx'
+import FeaturesIphone from "./Features/FeaturesIphone";
+import FeaturesMac from './Features/FeaturesMac';
+import FeaturesIpad from "./Features/FeaturesIpad";
 
 const ItemDetail = ({ data }) => {
   const [goToCart, setGoToCart] = useState(false);
@@ -13,6 +16,18 @@ const ItemDetail = ({ data }) => {
     addProductToCart(data, quantity);
   };
 
+
+  const featuresSelector = () =>{
+    if(data.category === 'iPhone'){
+     return <FeaturesIphone data={data} />  
+    }
+    else if(data.category === 'Mac'){
+      return <FeaturesMac data={data} />  
+    }
+    else if(data.category === 'iPad'){
+      return <FeaturesIpad data={data} />
+    }
+  }
 
   return (
     <div className="iphoneDetail">
@@ -63,75 +78,41 @@ const ItemDetail = ({ data }) => {
               <div className={data.color5}></div>
             </div>
           </div>
-          <div className="storage">
+          <div className={`storage ${data.hide}`}>
             <div className="storageTitle">
               <h3>Storage.</h3>
               <h3 className="gray">How much space?</h3>
             </div>
             <div className="storageCards">
-              <div className="gb">
-                <h3>128GB</h3>
+              <div className={`gb ${data.classStorage1}`}>
+                <h3>{data.storage1} </h3>
                 <p>From ${data.price + 100}</p>
               </div>
-              <div className="gb">
-                <h3>256GB</h3>
+              <div className={`gb ${data.classStorage2}`}>
+                <h3>{data.storage2}</h3>
                 <p>From ${data.price + 200}</p>
               </div>
-              <div className="gb">
-                <h3>512GB</h3>
+              <div className={`gb ${data.classStorage3}`}>
+                <h3>{data.storage3}</h3>
                 <p>From ${data.price + 400}</p>
               </div>
-              <div className="gb">
-                <h3>1TB</h3>
+              <div className={`gb ${data.classStorage4}`}>
+                <h3>{data.storage4}</h3>
                 <p>From ${data.price + 600}</p>
               </div>
             </div>
-            {
+          </div>
+          {
               goToCart 
               ? <Link to="/Cart" className="checkOut" href="##">Checkout</Link>
               : <> <ItemCount itemStock={data.stock} onAdd={onAdd}/></>
             }
-            
-           
-          </div>
         </div>
       </div>
-
-      <div className="featuresContainer">
-        <div className="featuresTitle">
-          <h1>{data.name}.</h1>
-          <h1 className="gray">Features.</h1>
-        </div>
-        <div className="features">
-          <div className="feature">
-            <img src="https://i.postimg.cc/63kfpRcx/A15-Bionic.png" alt="" />
-            <p>A15 Bionic chip</p>
-            <p className="gray">5-core GPU</p>
-          </div>
-          <div className="feature">
-            <img src="https://i.postimg.cc/mgsNH6D5/Screen.png" alt="" />
-            <h2>6.1″</h2>
-            <p>All-screen OLED display with ProMotion</p>
-          </div>
-          <div className="feature">
-            <img src="https://i.postimg.cc/tR6zmSRq/Camera-Iphone.png" alt="" />
-            <p>Pro camera system</p>
-            <p className="gray">Telephoto, Wide, UltraWide</p>
-          </div>
-          <div className="feature">
-            <img src="https://i.postimg.cc/wvykzFhk/5G.png" alt="" />
-            <p>Superfast 5G cellular</p>
-          </div>
-          <div className="feature">
-            <img src="https://i.postimg.cc/C5bHB1rB/Batery.png" alt="" />
-            <p>Up to 28 hours video playback</p>
-          </div>
-          <div className="feature">
-            <img src="https://i.postimg.cc/Yqwxc6j1/Face-ID.png" alt="" />
-            <h2>Face ID</h2>
-          </div>
-        </div>
-      </div>
+          {
+            featuresSelector()
+          }
+         
     </div>
   );
 };
