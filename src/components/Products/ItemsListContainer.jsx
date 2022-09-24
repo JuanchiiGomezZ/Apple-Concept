@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ItemsList from "./ItemsList";
-import dataProducts from "../../utils/dataProducts";
+/* import dataProducts from "../../utils/dataProducts"; */
 import { useParams } from "react-router-dom";
 import Loading from "../../utils/Loading";
 import helper from "../../assets/images/iphone/Helper.jpg";
@@ -8,28 +8,29 @@ import BannersIphone from './Banners/BannersIphone';
 import BannersMac from "./Banners/BannersMac";
 import BannerIpad from './Banners/BannerIpad';
 import ServicesBanner from "./Banners/ServicesBanner";
-
+import {getFirestore, where, collection, getDocs, query } from 'firebase/firestore'
 
 const ItemsListContainer = () => {
   const [data, setData] = useState([]);
   const { categoryId } = useParams();
+  const [isLoading, setIsLoading] = useState(true);
   
   useEffect(() => {
-    const getData = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(dataProducts);
-      },3000);
-    });
+    setIsLoading(true);
+    const querydb = getFirestore();
+    const queryCollection = collection(querydb, 'products');
     if (categoryId) {
-      getData.then((res) =>
-        setData(
-          res.filter((dataCategory) => dataCategory.category === categoryId)
-        )
-      );
+        const queryFilter = query(queryCollection, where('category', '==', categoryId));
+        getDocs(queryFilter)
+            .then((res) => setData(res.docs.map((product) => ({ id: product.id, ...product.data(setIsLoading(false)) }))));
     } else {
-      getData.then((res) => setData(res));
+        getDocs(queryCollection)
+            .then((res) => setData(res.docs.map((product) => ({ id: product.id, ...product.data(setIsLoading(false)) }))));
     }
   }, [categoryId]);
+
+
+
 
   const bannerSelector = () =>{
     if(categoryId === 'iPhone'){
@@ -44,7 +45,7 @@ const ItemsListContainer = () => {
   }
   return (
     <>
-      {data.length ? (
+      {isLoading ? <Loading/>:(
         <>
           <div className="shopTitle">
             <div className="shopHeading">
@@ -68,9 +69,8 @@ const ItemsListContainer = () => {
           {bannerSelector()}
           <ServicesBanner/>
         </>
-      ) : (
-        <Loading/>
-      )}
+      )
+      }
     </>
   );
 };

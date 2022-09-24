@@ -1,48 +1,26 @@
-import React, {useState, useEffect} from 'react'
-import ItemDetail from './ItemDetail';
-import dataProducts from '../../utils/dataProducts';
-import {useParams} from 'react-router-dom';
-import Loading from '../../utils/Loading';
+import React, { useState, useEffect } from "react";
+import ItemDetail from "./ItemDetail";
+/* import dataProducts from "../../utils/dataProducts"; */
+import { useParams } from "react-router-dom";
+import Loading from "../../utils/Loading";
+import { getDoc, getFirestore, doc } from "firebase/firestore";
 
 
+const ItemDetailContainer = () => {
+  const [data, setData] = useState({});
+  const { productId } = useParams();
+  const [isLoading, setIsLoading] = useState(true);
 
-const ItemDetailContainer = () =>{
-    const [data, setData] = useState({})
-    const {iphoneId} = useParams()
-    const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    const querydb = getFirestore();
+    const queryDoc = doc(querydb, "products", productId);
+    getDoc(queryDoc).then((res) =>
+      setData({ id: res.id, ...res.data(setIsLoading(false)) })
+    );
+  }, [productId]);
+  
 
-    useEffect(() =>{
-        const getData = new Promise(resolve =>{
-            setTimeout(()=>{
-                resolve(dataProducts);
-            },0)
-        });
-        getData.then(res => setData(res.find(dataIphone => dataIphone.id === parseInt(iphoneId))))
-
-        const getIsLoading = new Promise ((resolve) =>{
-          setTimeout(()=>{
-            resolve(false);
-          }, 3000);
-        });
-        getIsLoading.then(res => setIsLoading(res))
-    },[iphoneId]);
-
-
-
-  return (
-    <>
-    {
-      isLoading ?(
-        <Loading/>
-      )
-    :(
-      <ItemDetail data ={data}/>
-    )
-    }
-    </>
-    
-
-  )
-}
+  return <>{isLoading ? <Loading /> : <ItemDetail data={data} />}</>;
+};
 
 export default ItemDetailContainer;

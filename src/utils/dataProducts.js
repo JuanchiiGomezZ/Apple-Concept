@@ -16,7 +16,6 @@ const data =[
         category:'iPhone',
         stock:10,
         imageCart:'https://i.postimg.cc/VvfrWm6S/iphone14-Pro-Cart.png',
-
         chipImg:'https://i.postimg.cc/dt6zQcZW/A16-Bionic.png',
         chip:'A16 Bionic',
         screen:"6.7''",
@@ -25,10 +24,7 @@ const data =[
         camera:'48 MP | Telephoto, Wide, UltraWide',
         battery:'Up to 29 hours of video playback',
 
-        classStorage1:'gb',
-        classStorage2:'gb',
-        classStorage3:'gb',
-        classStorage4:'gb',
+        
         storage1:'128GB',
         storage2:'256GB',
         storage3:'512GB',
