@@ -27,16 +27,16 @@ const ItemCart = ({ product }) => {
               <p>Paying for 12 months: </p>
               <p>${((product.price * product.quantity) / 12).toFixed(2)}/mo</p>
             </div>
-            <p className="removeItem" onClick={() => removeProduct(product.id)}>
+            <p className="removeItem" onClick={() => removeProduct(product.id, product.selectedColor, product.selectedStorage)}>
               Remove
             </p>
             <div className="productHeadThird">
               <div className="productFeatures">
                 <div className="color">
-                  <p>Space Gray</p>
-                  <div className="circle gray"></div>
+                  <p>Color: {(product.selectedColor).charAt(0).toUpperCase() + (product.selectedColor).slice(1).toLowerCase()}</p>
+                  <div className={`circle ${product.selectedColor}`}></div>
                 </div>
-                <p>512 GB SSD</p>
+                <p>Storage: {product.selectedStorage}</p>
               </div>
             </div>
           </div>

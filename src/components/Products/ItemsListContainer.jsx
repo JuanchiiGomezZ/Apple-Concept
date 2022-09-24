@@ -18,7 +18,7 @@ const ItemsListContainer = () => {
   useEffect(() => {
     setIsLoading(true);
     const querydb = getFirestore();
-    const queryCollection = collection(querydb, 'products');
+    const queryCollection = collection(querydb, 'productsApple');
     if (categoryId) {
         const queryFilter = query(queryCollection, where('category', '==', categoryId));
         getDocs(queryFilter)
@@ -42,6 +42,7 @@ const ItemsListContainer = () => {
     else if(categoryId === 'iPad'){
       return <BannerIpad/>
     }
+    
   }
   return (
     <>

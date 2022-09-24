@@ -1,3 +1,5 @@
+
+
 .iphoneDetail {
   color: $black-color;
   margin-top: 50px;
@@ -97,6 +99,9 @@
           justify-content: start;
           align-items: center;
 
+          .active{
+            border: 3px solid $lightBlue-color !important;
+          }
           .circle {
             width: 35px;
             height: 35px;
@@ -160,6 +165,9 @@
           display: none !important;
     
         }
+        .active{
+          border: 3px solid $lightBlue-color !important;
+        }
         .gb {
           width: 80%;
           display: flex;
@@ -179,6 +187,7 @@
           }
         }
       }
+
       #addCartButton {
         background-color: #0071e3;
         color: white;

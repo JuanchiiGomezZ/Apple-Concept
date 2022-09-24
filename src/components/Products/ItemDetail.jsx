@@ -8,13 +8,26 @@ import FeaturesMac from './Features/FeaturesMac';
 import FeaturesIpad from "./Features/FeaturesIpad";
 
 const ItemDetail = ({ data }) => {
+
   const [goToCart, setGoToCart] = useState(false);
   const {addProductToCart} = useCartContext();
+  const [selectedStorage, setSelectedStorage] = useState("")
+  const [selectedColor, setSelectedColor] = useState("")
+
 
   const onAdd = (quantity) => {
     setGoToCart(true);
-    addProductToCart(data, quantity);
+    addProductToCart(data, quantity, selectedStorage, selectedColor);
   };
+
+  const clickStorage = (e, a) =>{
+    setSelectedStorage(a)
+    e.currentTarget.classList.toggle('active');
+  }
+  const clickColor = (e, a) =>{
+    setSelectedColor(a)
+    e.currentTarget.classList.toggle('active');
+  }
 
 
   const featuresSelector = () =>{
@@ -27,6 +40,8 @@ const ItemDetail = ({ data }) => {
     else if(data.category === 'iPad'){
       return <FeaturesIpad data={data} />
     }
+
+
   }
 
   return (
@@ -41,7 +56,7 @@ const ItemDetail = ({ data }) => {
           <h1>Buy {data.name}</h1>
           <p className="fromPrice">
             From ${data.price} or ${(data.price / 24).toFixed(2)}/mo.per month
-            for 24 mo.months before trade‑in*
+            for 24 mo.months before trade-in*
           </p>
         </div>
         <div className="help">
@@ -69,13 +84,13 @@ const ItemDetail = ({ data }) => {
               <h3>Colors.</h3>
               <h3 className="gray">Pick your favorite.</h3>
             </div>
-            <h4>Color - Green</h4>
+            <h4>Color - {selectedColor.charAt(0).toUpperCase() + (selectedColor).slice(1).toLowerCase()}</h4>
             <div className="colorsContainer">
-              <div className={data.color1}></div>
-              <div className={data.color2}></div>
-              <div className={data.color3}></div>
-              <div className={data.color4}></div>
-              <div className={data.color5}></div>
+              <div className={`circle ${data.color1}`} onClick={(e) => clickColor(e, data.color1)}></div>
+              <div className={`circle ${data.color2}`} onClick={(e) => clickColor(e, data.color2)}></div>
+              <div className={`circle ${data.color3}`} onClick={(e) => clickColor(e, data.color3)}></div>
+              <div className={`circle ${data.color4}`} onClick={(e) => clickColor(e, data.color4)}></div>
+              <div className={`circle ${data.color5}`} onClick={(e) => clickColor(e, data.color5)}></div>
             </div>
           </div>
           <div className={`storage ${data.hide}`}>
@@ -84,19 +99,19 @@ const ItemDetail = ({ data }) => {
               <h3 className="gray">How much space?</h3>
             </div>
             <div className="storageCards">
-              <div className={`gb ${data.classStorage1}`}>
+              <div className={`gb ${data.classStorage1}`} onClick={(e) => clickStorage(e, data.storage1)}>
                 <h3>{data.storage1} </h3>
                 <p>From ${data.price + 100}</p>
               </div>
-              <div className={`gb ${data.classStorage2}`}>
+              <div className={`gb ${data.classStorage2}`} onClick={(e) => clickStorage(e, data.storage2)}>
                 <h3>{data.storage2}</h3>
                 <p>From ${data.price + 200}</p>
               </div>
-              <div className={`gb ${data.classStorage3}`}>
+              <div className={`gb ${data.classStorage3}`} onClick={(e) => clickStorage(e, data.storage4)}>
                 <h3>{data.storage3}</h3>
                 <p>From ${data.price + 400}</p>
               </div>
-              <div className={`gb ${data.classStorage4}`}>
+              <div className={`gb ${data.classStorage4}`} onClick={(e) => clickStorage(e, data.storage4)}>
                 <h3>{data.storage4}</h3>
                 <p>From ${data.price + 600}</p>
               </div>
@@ -116,5 +131,6 @@ const ItemDetail = ({ data }) => {
     </div>
   );
 };
+
 
 export default ItemDetail;

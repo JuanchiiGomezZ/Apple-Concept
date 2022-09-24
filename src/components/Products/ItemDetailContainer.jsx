@@ -13,7 +13,7 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     const querydb = getFirestore();
-    const queryDoc = doc(querydb, "products", productId);
+    const queryDoc = doc(querydb, "productsApple", productId);
     getDoc(queryDoc).then((res) =>
       setData({ id: res.id, ...res.data(setIsLoading(false)) })
     );

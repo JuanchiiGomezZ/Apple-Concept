@@ -4,7 +4,6 @@ import { useCartContext } from "./CartContext";
 
 function Cart() {
   const { cart, totalPrice } = useCartContext();
-  console.log(cart);
   if (cart.length === 0) {
     return (
       <>

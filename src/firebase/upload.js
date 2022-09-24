@@ -2,7 +2,7 @@
 const admin = require('firebase-admin');
 const serviceAccount = require("./key_service_account.json");
 const data = require("./dataProducts.json");
-const collectionKey = "products"; //Name of the collection
+const collectionKey = "productsApple"; //Name of the collection
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
 });
