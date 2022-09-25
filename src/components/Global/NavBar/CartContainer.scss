@@ -34,22 +34,25 @@
   }
   .cartProductsContainer {
     img {
-      width: 60px;
+      width: 65px;
       margin: 10px 20px 0px 10px;
     }
     .productInCart {
       margin: 10px 0;
-      
       .productBoxInCart {
         width: 85%;
         display: flex;
         justify-content: start;
         align-items: center;
         margin: 0 auto;
-        p {
+        .nameProductInCart {
           font-family: $font-text-regular;
           color: #1d1d1f;
           font-size: 18px;
+        }
+        .productDescriptionInCart{
+          font-size: 16px;
+          margin-top: 7px;
         }
       }
       .h-line {

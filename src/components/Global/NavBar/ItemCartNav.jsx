@@ -3,7 +3,7 @@ import { useCartContext } from "../Cart/CartContext";
 
 const ItemCartNav = () => {
   const { cart } = useCartContext();
-
+  console.log(cart);
   if (cart.length === 0) {
     return (
       <>
@@ -19,8 +19,11 @@ const ItemCartNav = () => {
           <div className="productInCart" key={product.id}>
             <div className="productBoxInCart">
               <img src={product.imageCart} alt="" />
-              <div className="nameProductInCart">
-                <p>{product.name}</p>
+              <div>
+                <p className="nameProductInCart">{product.name}</p>
+                <div className="productDescriptionInCart">
+                  <p>{(product.selectedColor).charAt(0).toUpperCase() + (product.selectedColor).slice(1).toLowerCase()} | {product.selectedStorage}</p>
+                </div>
               </div>
             </div>
             <div className="h-line"></div>

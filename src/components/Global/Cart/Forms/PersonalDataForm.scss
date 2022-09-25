@@ -1,0 +1,63 @@
+
+.personalDataFrom{
+    margin: 100px 0;
+    h1{
+        font-size: 35px ;
+        margin-bottom: 15px;
+    }
+    .formsContainer{
+        input{
+            width: auto;
+            height: 45px;
+            border-radius: 10px;
+            display: block;
+            outline: none;
+            border: 1px solid rgba(117, 117, 117, 0.586);
+            font-size: 20px;
+            padding-left: 5px;
+            margin: 7px;
+        }
+     
+        .personalData{
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            margin-bottom: 35px;
+        }
+        .shippingData{
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+        }
+        .submitBtn{
+        background-color: #0071e3;
+        color: white;
+        border: 1px solid white;
+        padding: 8px;
+        border-radius: 15px;
+        font-size: 22px;
+        border: none;
+        width: 99%;
+        height: 60px;
+        cursor: pointer;
+        margin-top: 40px;
+        text-decoration: none;
+        &:hover {
+          background-color: white;
+          color: #0071e3;
+          border: 1px solid #0071e3;
+          transition: 0.25s;
+        }
+        }
+    }
+}
+
+
+@media(max-width:900px){
+    .dataBuyerForm{
+        .formsContainer{
+            .shippingData{
+                grid-template-columns:repeat(2, 1fr);
+            }
+        }
+    }
+}
+

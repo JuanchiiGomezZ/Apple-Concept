@@ -24,6 +24,7 @@ const ItemDetail = ({ data }) => {
     setSelectedStorage(a)
     e.currentTarget.classList.toggle('active');
   }
+  
   const clickColor = (e, a) =>{
     setSelectedColor(a)
     e.currentTarget.classList.toggle('active');

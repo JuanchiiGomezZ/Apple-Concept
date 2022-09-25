@@ -52,6 +52,32 @@
       display: flex;
       justify-content: space-between;
     }
+    .checkOut{
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      #checkOutBtn{
+        background-color: #0071e3;
+        color: white;
+        border: 1px solid white;
+        padding: 8px;
+        border-radius: 15px;
+        font-size: 22px;
+        border: none;
+        width: 300px;
+        height: 60px;
+        cursor: pointer;
+        margin-top: 40px;
+        text-decoration: none;
+        &:hover {
+          background-color: white;
+          color: #0071e3;
+          border: 1px solid #0071e3;
+          transition: 0.25s;
+        }
+      }
+    }
+   
   }
 }
 
