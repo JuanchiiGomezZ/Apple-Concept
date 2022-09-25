@@ -1,36 +1,28 @@
-
-.personalDataFrom{
-    margin: 100px 0;
+.dataPaymentForm{
     h1{
         font-size: 35px ;
         margin-bottom: 15px;
     }
-    .formsContainer{
+    .dataForms{
+        form{
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           margin-top: 30px;
+        }
+        
         input{
-            width: auto;
+            width: 48%;
             height: 45px;
             border-radius: 10px;
-            display: block;
             outline: none;
             border: 1px solid rgba(117, 117, 117, 0.586);
             font-size: 20px;
             padding-left: 5px;
             margin: 7px;
         }
-     
-        .personalData{
-            display: grid;
-            grid-template-columns:repeat(2, 1fr);
-            margin-bottom: 35px;
-        }
-        .shippingData{
-            display: grid;
-            grid-template-columns:repeat(3, 1fr);
-        }
-        
-    }
-    .submitBtn{
-        background-color: #0071e3;
+        #payBtn{
+            background-color: #0071e3;
         color: white;
         border: 1px solid white;
         padding: 8px;
@@ -49,16 +41,5 @@
           transition: 0.25s;
         }
         }
-}
-
-
-@media(max-width:900px){
-    .dataBuyerForm{
-        .formsContainer{
-            .shippingData{
-                grid-template-columns:repeat(2, 1fr);
-            }
-        }
     }
 }
-

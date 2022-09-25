@@ -24,9 +24,10 @@
 @import "../components/Products/Items.scss";
 @import '../components/Global/Cart/ItemCart.scss';
 @import '../components/Global/Cart/Forms/PersonalDataForm.scss';
-
+@import '../components/Global/Cart/Forms/PaymentDataForm.scss';
 /* More */
 @import "../components/Products/ItemCount/ItemCount.scss";
 @import "../utils/Loading.scss";
 
+@import 'react-credit-cards/lib/styles.scss';
 /* Screen */

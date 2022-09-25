@@ -62,10 +62,10 @@
 
   .productCard {
     width: 25%;
-    height: 520px;
+    height: 430px;
     overflow: hidden;
     margin: 0 30px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     p {
       color: #bf4800;
       font-family: $font-text-regular;
@@ -172,6 +172,17 @@
       padding-top: 10px;
       transform: scale(1.05, 1.05);
       transition: 0.4s;
+    }
+  }
+}
+
+
+
+@media(max-width: 1500px){
+  .shopContainer{
+    .productCard{
+      width: 280px;
+      margin-bottom: 50px;
     }
   }
 }

@@ -25,7 +25,7 @@ const PersonalDataForm = () => {
           <input type="text" placeholder="Number"/>
           <input type="text" placeholder="Floor" />
           </div>
-          <button class="submitBtn">Send</button>
+          
         </form>
       </div>
     </>

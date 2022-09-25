@@ -2,15 +2,26 @@ import React, { useState } from "react";
 import ItemCart from "./ItemCart";
 import { useCartContext } from "./CartContext";
 import PersonalDataForm from "./Forms/PersonalDataForm";
+import PaymentForm from "./Forms/PaymentDataForm";
 
 function Cart() {
-  const [btnState, setBtnState] = useState(false);
+ 
 
+  const [btnState, setBtnState] = useState(false);
   const goToForm = () => {
     setBtnState((btnState) => !btnState);
   };
-
   let toggleClassCheck = btnState ? "active" : "hide";
+
+
+  const [btnState2, setBtnState2] = useState(false);
+  const goToForm2 = () => {
+    setBtnState2((btnState) => !btnState);
+    
+  };
+  let toggleClassCheck2 = btnState2 ? "active" : "hide";
+
+
 
   const { cart, totalPrice } = useCartContext();
   if (cart.length === 0) {
@@ -87,10 +98,11 @@ function Cart() {
           </div>
           <div id="dataBuyerForm">
             <div className={`personalDataFrom ${toggleClassCheck}`}>
-              <PersonalDataForm/>
+              <PersonalDataForm />
+              <button className="submitBtn" onClick={(e) => goToForm2(e)}>Continue</button>
             </div>
-            <div className="buyData">
-
+            <div className={`dataPaymentForm ${toggleClassCheck2}`}>
+              <PaymentForm />
             </div>
           </div>
         </div>

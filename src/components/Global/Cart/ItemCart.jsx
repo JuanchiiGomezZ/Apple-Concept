@@ -45,7 +45,7 @@ const ItemCart = ({ product }) => {
             <div className="appleCareHead">
               <div className="appleCareTitle">
                 <i className="fa-brands fa-apple"></i>
-                <p>Apple Care for $399</p>
+                <p>Apple Care for {Math.round(product.price * 0.15)}</p>
               </div>
               <p className="add">Add</p>
             </div>
