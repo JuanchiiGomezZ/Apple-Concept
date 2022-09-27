@@ -24,12 +24,12 @@ const Items = ({
          <h2 className="productTitle">{name}</h2>
          <img src={image} alt={name} />
          <div className="colors">
-           <div className={color1}></div>
-           <div className={color2}></div>
-           <div className={color3}></div>
-           <div className={color4}></div>
-           <div className={color5}></div>
-           <div className={color6}></div>
+           <div className={`circle ${color1}`}></div>
+           <div className={`circle ${color2}`}></div>
+           <div className={`circle ${color3}`}></div>
+           <div className={`circle ${color4}`}></div>
+           <div className={`circle ${color5}`}></div>
+           <div className={`circle ${color6}`}></div>
          </div>
          <div className="description">
            <h2 className="productPrice">${price}</h2>

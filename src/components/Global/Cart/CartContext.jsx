@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useContext } from "react";
 
 
+
 const CartContext = React.createContext([]);
 export const useCartContext = () => useContext(CartContext);
-
-
 
 const CartContextProvider = ({ children }) => {
   const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || "[]");
@@ -47,7 +46,7 @@ const CartContextProvider = ({ children }) => {
     setCart(cart.filter((product) => product.id !== id && product.selectedColor !== selectedColor && product.selectedStorage !== selectedStorage));
 
   const totalPrice = () =>{
-    return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);
+    return cart.reduce((prev, act) => (prev + act.quantity * act.price)* 1.1, 0);
   }
 
   const totalProducts = () =>cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity, 0)

@@ -1,28 +1,105 @@
-.dataPaymentForm{
-    h1{
-        font-size: 35px ;
-        margin-bottom: 15px;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.paymentForms {
+  .personalDataFrom {
+    margin: 100px 0;
+    width: 100%;
+    h1 {
+      font-size: 35px;
+      margin-bottom: 15px;
     }
-    .dataForms{
-        form{
-           display: flex;
-           justify-content: center;
-           flex-wrap: wrap;
-           margin-top: 30px;
-        }
-        
-        input{
-            width: 48%;
-            height: 45px;
-            border-radius: 10px;
-            outline: none;
-            border: 1px solid rgba(117, 117, 117, 0.586);
-            font-size: 20px;
-            padding-left: 5px;
-            margin: 7px;
-        }
-        #payBtn{
-            background-color: #0071e3;
+    .formsContainer {
+      input {
+        width: auto;
+        height: 45px;
+        border-radius: 10px;
+        display: block;
+        outline: none;
+        border: 1px solid rgba(117, 117, 117, 0.586);
+        font-size: 20px;
+        padding-left: 5px;
+        margin: 7px;
+      }
+
+      .personalData {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 35px;
+      }
+      .shippingData {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .submitBtn {
+      background-color: #0071e3;
+      color: white;
+      border: 1px solid white;
+      padding: 8px;
+      border-radius: 15px;
+      font-size: 22px;
+      border: none;
+      width: 99% !important;
+      height: 60px !important;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+      text-align: center;
+      &:hover {
+        background-color: white;
+        color: #0071e3;
+        border: 1px solid #0071e3;
+        transition: 0.25s;
+      }
+    }
+  }
+  .dataIsMissing {
+    text-align: center;
+    width: 98.5%;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #f56061;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+    margin-top: 10px;
+    .error {
+      margin: 0 5px;
+      font-weight: bold;
+    }
+  }
+
+  .dataPaymentForm {
+    h1 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+    .dataForms {
+      form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      input {
+        width: 48%;
+        height: 45px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid rgba(117, 117, 117, 0.586);
+        font-size: 20px;
+        padding-left: 5px;
+        margin: 7px;
+      }
+      #payBtn {
+        background-color: #0071e3;
         color: white;
         border: 1px solid white;
         padding: 8px;
@@ -40,6 +117,17 @@
           border: 1px solid #0071e3;
           transition: 0.25s;
         }
-        }
+      }
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .dataBuyerForm {
+    .formsContainer {
+      .shippingData {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
 }

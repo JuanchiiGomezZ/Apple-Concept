@@ -1,26 +1,17 @@
 import React, { useState } from "react";
 import ItemCart from "./ItemCart";
 import { useCartContext } from "./CartContext";
-import PersonalDataForm from "./Forms/PersonalDataForm";
 import PaymentForm from "./Forms/PaymentDataForm";
 
-function Cart() {
- 
 
+
+
+const Cart = () => {
   const [btnState, setBtnState] = useState(false);
-  const goToForm = () => {
+  const showForm = () => {
     setBtnState((btnState) => !btnState);
   };
   let toggleClassCheck = btnState ? "active" : "hide";
-
-
-  const [btnState2, setBtnState2] = useState(false);
-  const goToForm2 = () => {
-    setBtnState2((btnState) => !btnState);
-    
-  };
-  let toggleClassCheck2 = btnState2 ? "active" : "hide";
-
 
 
   const { cart, totalPrice } = useCartContext();
@@ -74,41 +65,35 @@ function Cart() {
             <div className="totalDescriptionContainer">
               <div className="totalDescription">
                 <p>Subtotal</p>
-                <p>{totalPrice()}</p>
+                <p>${(totalPrice()/1.1).toFixed(0)}</p>
               </div>
               <div className="totalDescription">
                 <p>Shipping</p>
                 <p>FREE</p>
               </div>
               <div className="totalDescription">
-                <p>Estimated Taxes: </p>
-                <p>{(totalPrice() * 0.1).toFixed(2)}</p>
+                <p>Estimated Taxes (10%): </p>
+                <p>${((totalPrice()/1.1)*0.1).toFixed(0)}</p>
               </div>
             </div>
             <div className="hLine"></div>
             <div className="total">
               <h2>Total</h2>
-              <h2>{(totalPrice() + totalPrice() * 0.1).toFixed(2)}</h2>
+              <h2>${(totalPrice()).toFixed(0)}</h2>
             </div>
             <div className="checkOut">
-              <button id="checkOutBtn" onClick={(e) => goToForm(e)}>
+              <button  id="checkOutBtn" onClick={(e) => showForm(e)}>
                 Check out
               </button>
             </div>
           </div>
           <div id="dataBuyerForm">
-            <div className={`personalDataFrom ${toggleClassCheck}`}>
-              <PersonalDataForm />
-              <button className="submitBtn" onClick={(e) => goToForm2(e)}>Continue</button>
-            </div>
-            <div className={`dataPaymentForm ${toggleClassCheck2}`}>
-              <PaymentForm />
-            </div>
+              <PaymentForm show={toggleClassCheck} />
           </div>
         </div>
       </>
     );
   }
-}
+};
 
 export default Cart;
