@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Cards from "react-credit-cards";
 import { useCartContext } from "../CartContext";
 import {
@@ -6,6 +6,8 @@ import {
   collection,
   getFirestore,
   serverTimestamp,
+  getDoc,
+  doc,
 } from "firebase/firestore";
 
 const PaymentDataForm = (toggleClassCheck) => {
@@ -52,19 +54,24 @@ const PaymentDataForm = (toggleClassCheck) => {
       setErrorState(true);
       
     }
-    console.log(orderData)
+    
   };
 
   const finishPayment = (e) => {
     if (cardName !== "" && number.length === 16 && cvc.length === 3 && expiry.length === 4) {
-      const db = getFirestore();
-      const ordersCollection = collection(db, "orders");
-      addDoc(ordersCollection, orderData);
-      clearCart();
+      uploadOrderToFirebase();
+      /* clearCart(); */
     } else {
       setError2State(true);
     }
   };
+
+  const uploadOrderToFirebase =() =>{
+    const db = getFirestore();
+    const ordersCollection = collection(db, "orders");
+    addDoc(ordersCollection, orderData)
+    .then(({id}) => alert(`¡Felicitaciones! Orden completaeda \n Codigo de compra: ${id}`));
+  }
 
   let orderData = {
     buyerData: {
@@ -97,7 +104,18 @@ const PaymentDataForm = (toggleClassCheck) => {
     date: serverTimestamp(),
   };
 
-  
+
+  /* Pick orders from firebase */
+/*   const [orders, setOrders] = useState({});
+useEffect(() => {
+  const querydb = getFirestore();
+  const queryDoc = doc(querydb, 'orders', '0ixxAUTMi3UIRvyVmlKr');
+  getDoc(queryDoc)
+    .then(res => setOrders({id:res.id, ...res.data()}))
+},[]); */
+
+
+
 
   return (
     <div className="paymentForms">
