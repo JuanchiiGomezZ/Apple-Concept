@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, /* useEffect */ } from "react";
 import Cards from "react-credit-cards";
 import { useCartContext } from "../CartContext";
 import {
@@ -6,8 +6,8 @@ import {
   collection,
   getFirestore,
   serverTimestamp,
-  getDoc,
-  doc,
+/*   getDoc,
+  doc, */
 } from "firebase/firestore";
 
 const PaymentDataForm = (toggleClassCheck) => {
@@ -60,7 +60,7 @@ const PaymentDataForm = (toggleClassCheck) => {
   const finishPayment = (e) => {
     if (cardName !== "" && number.length === 16 && cvc.length === 3 && expiry.length === 4) {
       uploadOrderToFirebase();
-      /* clearCart(); */
+      clearCart();
     } else {
       setError2State(true);
     }
