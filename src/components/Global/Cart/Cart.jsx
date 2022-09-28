@@ -10,8 +10,11 @@ const Cart = () => {
   const [btnState, setBtnState] = useState(false);
   const showForm = () => {
     setBtnState((btnState) => !btnState);
+    setCheckoutToggle(false);
   };
   let toggleClassCheck = btnState ? "active" : "hide";
+  const [checkoutToggle, setCheckoutToggle] = useState(true);
+  let toggleCheckout = checkoutToggle ? "active" : "hide";
 
 
   const { cart, totalPrice } = useCartContext();
@@ -82,7 +85,7 @@ const Cart = () => {
               <h2>${(totalPrice()).toFixed(0)}</h2>
             </div>
             <div className="checkOut">
-              <button  id="checkOutBtn" onClick={(e) => showForm(e)}>
+              <button  className={toggleCheckout} id="checkOutBtn" onClick={(e) => showForm(e)}>
                 Check out
               </button>
             </div>

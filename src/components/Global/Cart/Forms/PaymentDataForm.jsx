@@ -35,21 +35,16 @@ const PaymentDataForm = (toggleClassCheck) => {
   let toggleError = errorState ? "active" : "hide";
   const [error2State, setError2State] = useState(false);
   let toggleError2 = error2State ? "active" : "hide";
+  const [checkoutToggle, setCheckoutToggle] = useState(true);
+  let toggleCheckout = checkoutToggle ? "active" : "hide";
 
   const showPayment = (e) => {
     if (
-      name !== "" &&
-      email !== "" &&
-      idNumber !== "" &&
-      phoneNumber !== "" &&
-      postalCode !== "" &&
-      city !== "" &&
-      state !== "" &&
-      street !== "" &&
-      houseNumber !== ""
+      name && email && idNumber && phoneNumber  && postalCode && city && state && street && houseNumber !== ""
     ) {
       setBtnState((btnState) => !btnState);
       setErrorState(false);
+      setCheckoutToggle(false)
     } else {
       setErrorState(true);
       
@@ -70,7 +65,7 @@ const PaymentDataForm = (toggleClassCheck) => {
     const db = getFirestore();
     const ordersCollection = collection(db, "orders");
     addDoc(ordersCollection, orderData)
-    .then(({id}) => alert(`¡Felicitaciones! Orden completaeda \n Codigo de compra: ${id}`));
+    .then(({id}) => alert(`¡Felicitaciones! Orden completada \n Codigo de compra: ${id}`));
   }
 
   let orderData = {
@@ -153,7 +148,7 @@ useEffect(() => {
                 onChange={(e) => setphoneNumber(e.target.value)}
               />
             </div>
-            <h1>Shipping Information</h1>
+            <h1>Shipping Information.</h1>
             <div className="shippingData">
               <input
                 type="number"
@@ -205,7 +200,7 @@ useEffect(() => {
             </div>
             <input
               type="button"
-              className="submitBtn"
+              className={`submitBtn ${toggleCheckout}`}
               value={"Continue"}
               onClick={(e) => showPayment(e)}
             />
@@ -213,7 +208,7 @@ useEffect(() => {
         </div>
       </div>
       <div className={`dataPaymentForm ${toggleClass}`}>
-        <h1>Payment Information</h1>
+        <h1>Payment Information.</h1>
         <Cards
           number={number}
           name={cardName}

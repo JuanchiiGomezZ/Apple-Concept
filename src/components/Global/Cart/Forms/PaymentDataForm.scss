@@ -77,7 +77,7 @@ input::-webkit-inner-spin-button {
 
   .dataPaymentForm {
     h1 {
-      font-size: 35px;
+      font-size: 37px;
       margin-bottom: 15px;
     }
     .dataForms {
@@ -123,10 +123,12 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 900px) {
-  .dataBuyerForm {
+  .paymentForms{
     .formsContainer {
       .shippingData {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        
       }
     }
   }
