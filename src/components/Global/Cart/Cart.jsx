@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ItemCart from "./ItemCart";
 import { useCartContext } from "./CartContext";
-import PaymentForm from "./Forms/PaymentDataForm";
+import PaymentForm from "./PaymentDataForm";
 
 
 

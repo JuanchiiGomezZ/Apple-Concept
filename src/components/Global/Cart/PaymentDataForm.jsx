@@ -1,6 +1,6 @@
 import React, { useState, /* useEffect */ } from "react";
 import Cards from "react-credit-cards";
-import { useCartContext } from "../CartContext";
+import { useCartContext } from "./CartContext";
 import {
   addDoc,
   collection,

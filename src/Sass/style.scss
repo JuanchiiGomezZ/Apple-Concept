@@ -2,31 +2,24 @@
 @import "./global.scss";
 
 /* Components */
-/* Global Components */
-@import "../components/Global/NavBar/NavBar.scss";
-@import "../components/Global/NavBar/CartContainer.scss";
-@import "../components/Global/Footer/Footer.scss";
-@import "../components/Global/PageNotFound/PageNotFound.scss";
-@import "../components/Global/Cart/Cart.scss";
-
-/* Home Components */
-@import "../components/Home/Banner/Banner.scss";
-@import "../components/Home/Banner/Banner2.scss";
-@import "../components/Home/Categories/Categories.scss";
-
-
-/* Products Component */
-@import '../components/Products/Banners/ServicesBanners.scss';
-@import "../components/Products/Banners/BannersIphone.scss";
-@import "../components/Products/Banners/BannersMac.scss";
-@import "../components/Products/Banners/BannerIpad.scss";
-@import "../components/Products/ItemDetail.scss";
-@import "../components/Products/Items.scss";
-@import '../components/Global/Cart/ItemCart.scss';
-@import '../components/Global/Cart/Forms/PaymentDataForm.scss';
-/* More */
-@import "../components/Products/ItemCount/ItemCount.scss";
-@import "../utils/Loading.scss";
-
+@import "./Styles/NavBar.scss";
+@import "./Styles/Banner.scss";
+@import "./Styles/Banner2.scss";
+@import "./Styles/BannerIpad.scss";
+@import "./Styles/BannersIphone.scss";
+@import "./Styles/BannersMac.scss";
+@import "./Styles/Cart.scss";
+@import "./Styles/CartContainer.scss";
+@import './Styles/Categories.scss';
+@import "./Styles/Footer.scss";
+@import "./Styles/ItemCart.scss";
+@import "./Styles/ItemCount.scss";
+@import "./Styles/ItemDetail.scss";
+@import "./Styles/Items.scss";
+@import './Styles/PageNotFound.scss';
+@import './Styles/PaymentDataForm.scss';
+@import "./Styles/ServicesBanners.scss";
+@import "./Styles/Loading.scss";
+@import './Styles/PucharseSummary.scss';
 @import 'react-credit-cards/lib/styles.scss';
-/* Screen */
+

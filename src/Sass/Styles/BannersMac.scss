@@ -1,5 +1,5 @@
 .bannersMac{
-    background-image: url('../../../assets/images/MacBanner.png');
+    background-image: url('../../assets/images/MacBanner.png');
     width: 100vw;
     height: 100vh;
     background-position: center;
@@ -52,7 +52,7 @@
 
 @media (max-width:700px) {
     .bannersMac{
-        background-image: url('../../../assets/images/MacBannerMobile.png');
+        background-image: url('../../assets/images/MacBannerMobile.png');
         .bannersMacText{
             margin-top: 20vh;
             .bannerMacTitle{
