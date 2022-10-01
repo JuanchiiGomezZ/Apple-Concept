@@ -12,6 +12,7 @@ import PucharseSummary from "./PucharseSummaryContainer";
 const PaymentDataForm = (toggleClassCheck) => {
   const { cart, totalPrice } = useCartContext();
 
+
   const [number, setNumber] = useState("");
   const [cardName, setCardName] = useState("");
   const [expiry, setExpiry] = useState("");
@@ -264,6 +265,7 @@ const PaymentDataForm = (toggleClassCheck) => {
           </form>
         </div>
       </div>
+      
     </div>
   );
 };

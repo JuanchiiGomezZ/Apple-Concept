@@ -1,38 +1,44 @@
-.pucharseInformation{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 100px;
-    h1{
-        font-size: 40px;
-        color: $black-color;
+.pucharseInformation {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  h1 {
+    font-size: 40px;
+    color: $black-color;
+  }
+  h2 {
+    margin-top: 10px;
+  }
+  p {
+    font-size: 19px;
+  }
+  button {
+    background-color: #0071e3;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 22px;
+    border: none;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 40px;
+    text-decoration: none;
+    &:hover {
+      background-color: white;
+      color: #0071e3;
+      border: 1px solid #0071e3;
+      transition: 0.25s;
     }
-    h2{
-        margin-top: 10px;
-    }
-    p{
-        font-size: 19px
-    }
-    button{
-        background-color: #0071e3;
-        color: white;
-        border: 1px solid white;
-        padding: 8px;
-        border-radius: 15px;
-        font-size: 22px;
-        border: none;
-        width: 100%;
-        height: 60px;
-        cursor: pointer;
-        margin-top: 40px;
-        text-decoration: none;
-        &:hover {
-          background-color: white;
-          color: #0071e3;
-          border: 1px solid #0071e3;
-          transition: 0.25s;
-        }
-    }
+  }
 }
-.swal2-icon.swal2-success{
-    overflow: hidden;
+.swal2-icon.swal2-success {
+  overflow: hidden;
+}
+.rccs__card--back {
+  transform: rotateY(360deg) !important;
+}
+.rccs__cvc {
+  transform: scaleX(-1);
 }
