@@ -10,7 +10,7 @@ import ItemDetailContainer from "./components/Products/ItemDetailContainer";
 import ItemsListContainer from "./components/Products/ItemsListContainer";
 import Cart from "./components/Global/Cart/Cart";
 import CartProvider from "./components/Global/Cart/CartContext";
-import PucharseSummary from "./components/Global/Cart/PucharseSummary";
+
 import './utils/firebaseConfig'
 
 const App = () => {
@@ -26,7 +26,6 @@ const App = () => {
             <Route path="/Shop/:categoryId" element={<ItemsListContainer />}></Route>
             <Route path="/Shop/:categoryId/:productId" element={<ItemDetailContainer />}></Route>
             <Route path="/Cart" element={<Cart />}></Route>
-            <Route path="/Cart/Summary" element={<PucharseSummary/>}></Route>
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -3,7 +3,6 @@ import { useCartContext } from "../Cart/CartContext";
 
 const ItemCartNav = () => {
   const { cart } = useCartContext();
-  console.log(cart);
   if (cart.length === 0) {
     return (
       <>

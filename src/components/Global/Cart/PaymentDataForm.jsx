@@ -1,4 +1,4 @@
-import React, { useState, /* useEffect */ } from "react";
+import React, { useState /* useEffect */ } from "react";
 import Cards from "react-credit-cards";
 import { useCartContext } from "./CartContext";
 import {
@@ -6,12 +6,11 @@ import {
   collection,
   getFirestore,
   serverTimestamp,
-/*   getDoc,
-  doc, */
 } from "firebase/firestore";
+import PucharseSummary from "./PucharseSummaryContainer";
 
 const PaymentDataForm = (toggleClassCheck) => {
-  const { clearCart, cart, totalPrice } = useCartContext();
+  const { cart, totalPrice } = useCartContext();
 
   const [number, setNumber] = useState("");
   const [cardName, setCardName] = useState("");
@@ -38,35 +37,50 @@ const PaymentDataForm = (toggleClassCheck) => {
   const [checkoutToggle, setCheckoutToggle] = useState(true);
   let toggleCheckout = checkoutToggle ? "active" : "hide";
 
+  const [orderId, setOrderId] = useState("");
+  const [showSummary, setShowSummary] = useState(false);
+
+  /*   const MySwal = withReactContent(Swal) */
+
   const showPayment = (e) => {
     if (
-      name && email && idNumber && phoneNumber  && postalCode && city && state && street && houseNumber !== ""
+      name &&
+      email &&
+      idNumber &&
+      phoneNumber &&
+      postalCode &&
+      city &&
+      state &&
+      street &&
+      houseNumber !== ""
     ) {
       setBtnState((btnState) => !btnState);
       setErrorState(false);
-      setCheckoutToggle(false)
+      setCheckoutToggle(false);
     } else {
       setErrorState(true);
-      
     }
-    
   };
 
   const finishPayment = (e) => {
-    if (cardName !== "" && number.length === 16 && cvc.length === 3 && expiry.length === 4) {
+    if (
+      cardName !== "" &&
+      number.length === 16 &&
+      cvc.length === 3 &&
+      expiry.length === 4
+    ) {
       uploadOrderToFirebase();
-      clearCart();
+      setShowSummary(true);
     } else {
       setError2State(true);
     }
   };
 
-  const uploadOrderToFirebase =() =>{
+  const uploadOrderToFirebase = () => {
     const db = getFirestore();
     const ordersCollection = collection(db, "orders");
-    addDoc(ordersCollection, orderData)
-    .then(({id}) => alert(`¡Felicitaciones! Orden completada \n Codigo de compra: ${id}`));
-  }
+    addDoc(ordersCollection, orderData).then(({ id }) => setOrderId(id));
+  };
 
   let orderData = {
     buyerData: {
@@ -86,7 +100,7 @@ const PaymentDataForm = (toggleClassCheck) => {
     paymentData: {
       cardName,
       number,
-      cvc ,
+      cvc,
       expiry,
     },
     productsData: cart.map((product) => ({
@@ -99,19 +113,9 @@ const PaymentDataForm = (toggleClassCheck) => {
     date: serverTimestamp(),
   };
 
-
-  /* Pick orders from firebase */
-/*   const [orders, setOrders] = useState({});
-useEffect(() => {
-  const querydb = getFirestore();
-  const queryDoc = doc(querydb, 'orders', '0ixxAUTMi3UIRvyVmlKr');
-  getDoc(queryDoc)
-    .then(res => setOrders({id:res.id, ...res.data()}))
-},[]); */
-
-
-
-
+  if (showSummary) {
+    return <PucharseSummary orderId={orderId} />;
+  }
   return (
     <div className="paymentForms">
       <div className={`personalDataFrom ${toggleClassCheck.show}`}>
@@ -122,28 +126,24 @@ useEffect(() => {
               <input
                 type="text"
                 placeholder="Full name"
-                required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="email"
                 placeholder="Email"
-                required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <input
                 type="number"
                 placeholder="ID number"
-                required
                 value={idNumber}
                 onChange={(e) => setIdNumber(e.target.value)}
               />
               <input
                 type="number"
                 placeholder="Phone Number"
-                required
                 value={phoneNumber}
                 onChange={(e) => setphoneNumber(e.target.value)}
               />
@@ -153,42 +153,36 @@ useEffect(() => {
               <input
                 type="number"
                 placeholder="Postal code"
-                required
                 value={postalCode}
                 onChange={(e) => setPostalCode(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="State"
-                required
                 value={state}
                 onChange={(e) => setState(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="City"
-                required
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Street"
-                required
                 value={street}
                 onChange={(e) => setStreet(e.target.value)}
               />
               <input
                 type="number"
                 placeholder="Number"
-                required
                 value={houseNumber}
                 onChange={(e) => setHouseNumber(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Floor"
-                required
                 value={floor}
                 onChange={(e) => setFloor(e.target.value)}
               />
@@ -226,7 +220,6 @@ useEffect(() => {
               value={number}
               onChange={(e) => setNumber(e.target.value)}
               onFocus={(e) => setFocus(e.target.name)}
-              required
             />
             <input
               type="text"
@@ -236,7 +229,6 @@ useEffect(() => {
               value={cardName}
               onChange={(e) => setCardName(e.target.value)}
               onFocus={(e) => setFocus(e.target.name)}
-              required
             />
             <input
               type="tel"
@@ -246,7 +238,6 @@ useEffect(() => {
               value={expiry}
               onChange={(e) => setExpiry(e.target.value)}
               onFocus={(e) => setFocus(e.target.name)}
-              required
             />
             <input
               type="tel"
@@ -256,7 +247,6 @@ useEffect(() => {
               value={cvc}
               onChange={(e) => setCvc(e.target.value)}
               onFocus={(e) => setFocus(e.target.name)}
-              required
             />
             <div className={`dataIsMissing ${toggleError2}`}>
               <i className="fa-solid fa-triangle-exclamation"></i>
