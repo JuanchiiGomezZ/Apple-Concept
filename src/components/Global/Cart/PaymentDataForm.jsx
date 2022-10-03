@@ -8,6 +8,8 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 import PucharseSummary from "./PucharseSummaryContainer";
+import AOS from 'aos';
+
 
 const PaymentDataForm = (toggleClassCheck) => {
   const { cart, totalPrice } = useCartContext();
@@ -58,6 +60,11 @@ const PaymentDataForm = (toggleClassCheck) => {
       setBtnState((btnState) => !btnState);
       setErrorState(false);
       setCheckoutToggle(false);
+      window.scroll({
+        top: 2500,
+        behavior: "smooth",
+    })
+
     } else {
       setErrorState(true);
     }
@@ -117,9 +124,18 @@ const PaymentDataForm = (toggleClassCheck) => {
   if (showSummary) {
     return <PucharseSummary orderId={orderId} />;
   }
+  
+  
+  AOS.init({
+    // initialise with other settings
+    duration : 1000,
+    offset: 100,
+    once:true,
+  });
+
   return (
     <div className="paymentForms">
-      <div className={`personalDataFrom ${toggleClassCheck.show}`}>
+      <div className={`personalDataFrom ${toggleClassCheck.show}`}data-aos="fade-down">
         <h1>Personal information.</h1>
         <div className="formsContainer">
           <form>
@@ -202,7 +218,7 @@ const PaymentDataForm = (toggleClassCheck) => {
           </form>
         </div>
       </div>
-      <div className={`dataPaymentForm ${toggleClass}`}>
+      <div className={`dataPaymentForm ${toggleClass}`}data-aos="fade-down">
         <h1>Payment Information.</h1>
         <Cards
           number={number}

@@ -11,6 +11,10 @@ const Cart = () => {
   const showForm = () => {
     setBtnState((btnState) => !btnState);
     setCheckoutToggle(false);
+    window.scroll({
+      top: 2500,
+      behavior: "smooth",
+  })
   };
   let toggleClassCheck = btnState ? "active" : "hide";
   const [checkoutToggle, setCheckoutToggle] = useState(true);
