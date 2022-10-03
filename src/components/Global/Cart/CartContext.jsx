@@ -14,7 +14,7 @@ const CartContextProvider = ({ children }) => {
   }, [cart]);
   const addProductToCart = (item, quantity, selectedStorage, selectedColor) => {
     if (isInCart(item.id, selectedColor, selectedStorage)) {
-      if(areThereStock(item.stock)){
+      if((areThereStock(item.stock))){
         setCart(
           cart.map((product) => {
             return product.id === item.id && product.selectedColor === selectedColor && product.selectedStorage === selectedStorage 
@@ -33,17 +33,20 @@ const CartContextProvider = ({ children }) => {
   const clearCart = () => setCart([]);
 
   const isInCart = (id, selectedColor, selectedStorage) =>{
-    console.log(selectedColor)
     return cart.find((product) => product.id === id && product.selectedColor === selectedColor && product.selectedStorage === selectedStorage) ? true : false;
   }
   const isInCart2 = (selectedColor, selectedStorage) =>{
     return cart.find((product) => product.selectedColor === selectedColor && product.selectedStorage === selectedStorage ) ? true : false;
   }
-    
+   
+  /* const areThereStock2 = (stock, counter) => (cart.find((product) => stock - product.quantity >= counter) ? true : false); */
   const areThereStock = (stock) =>  cart.find((product) => stock > product.quantity) ? true : false;
 
-  const removeProduct = (id, selectedColor, selectedStorage) =>
-    setCart(cart.filter((product) => product.id !== id && product.selectedColor !== selectedColor && product.selectedStorage !== selectedStorage));
+  const removeProduct = (id, selectedColor, selectedStorage) =>{
+    console.log(selectedColor)
+    setCart(cart.filter((product) => product.id !== id || product.selectedColor !== selectedColor || product.selectedStorage !== selectedStorage));
+  }
+    
 
   const totalPrice = () =>{
     return cart.reduce((prev, act) => (prev + act.quantity * act.price)* 1.1, 0);
@@ -62,6 +65,7 @@ const CartContextProvider = ({ children }) => {
         totalPrice,
         totalProducts,
         areThereStock,
+        /* areThereStock2, */
         cart
       }}
     >

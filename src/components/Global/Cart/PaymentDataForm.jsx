@@ -79,6 +79,10 @@ const PaymentDataForm = (toggleClassCheck) => {
     ) {
       uploadOrderToFirebase();
       setShowSummary(true);
+      window.scroll({
+        top: 1000,
+        behavior: "smooth",
+    })
     } else {
       setError2State(true);
     }

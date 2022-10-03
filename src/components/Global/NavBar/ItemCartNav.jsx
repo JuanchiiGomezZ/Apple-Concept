@@ -15,7 +15,7 @@ const ItemCartNav = () => {
     return (
       <>
         {cart.map((product) => (
-          <div className="productInCart" key={product.id}>
+          <div className="productInCart" key={product.id + product.selectedColor + product.selectedStorage}>
             <div className="productBoxInCart">
               <img src={product.imageCart} alt="" />
               <div>
