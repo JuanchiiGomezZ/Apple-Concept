@@ -1,10 +1,14 @@
 import React,{useState} from "react";
 import { useCartContext } from "./CartContext";
 
+
 const ItemCart = ({ product }) => {
   const { removeProduct } = useCartContext();
+
+  /*  */
   const [appleCare, setAppleCare] = useState(0);
   const [showAppleCare, setShowAppleCare] = useState(false);
+
 
   const addApleCare = (e, a) =>{
     setAppleCare(a);
@@ -35,9 +39,12 @@ const ItemCart = ({ product }) => {
               <p>Paying for 12 months: </p>
               <p>${((product.price * product.quantity) / 12).toFixed(2)}/mo</p>
             </div>
+            <div className="remover">
             <p className="removeItem" onClick={() => removeProduct(product.id, product.selectedColor, product.selectedStorage)}>
               Remove
             </p>
+            </div>
+         
             <div className="productHeadThird">
               <div className="productFeatures">
                 <div className="color">
@@ -54,7 +61,7 @@ const ItemCart = ({ product }) => {
               <div className="appleCareTitle">
                 <i className="fa-brands fa-apple"></i>
                 
-                <p>Apple Care for {Math.round(product.price * 0.15)}</p>
+                <p>Apple Care for ${Math.round(product.price * 0.15)}</p>
               </div>
               {
                 showAppleCare

@@ -29,16 +29,20 @@
             font-size: 15px;
             margin-top: 10px;
           }
-          .removeItem{
+          .remover{
+            width: 100%;
             display: flex;
             justify-content: end;
-            color: $lightBlue-color;
-            font-size: 18px;
-            cursor: pointer;
-            &:hover {
-              font-weight: bold;
+            .removeItem{
+              color: $lightBlue-color;
+              font-size: 18px;
+              cursor: pointer;
+              &:hover {
+                font-weight: bold;
+              }
             }
           }
+          
         }
         .productFeatures {
           margin: 30px auto 0;

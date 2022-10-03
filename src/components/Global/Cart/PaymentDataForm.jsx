@@ -12,9 +12,10 @@ import AOS from 'aos';
 
 
 const PaymentDataForm = (toggleClassCheck) => {
+  /* Calling the cart content and the total */
   const { cart, totalPrice } = useCartContext();
 
-
+/*Setting the states where the data of the inputs will be stored  */
   const [number, setNumber] = useState("");
   const [cardName, setCardName] = useState("");
   const [expiry, setExpiry] = useState("");
@@ -31,6 +32,8 @@ const PaymentDataForm = (toggleClassCheck) => {
   const [houseNumber, setHouseNumber] = useState("");
   const [floor, setFloor] = useState("");
 
+
+  /* Playing with states to hide and show the inputs container */
   const [btnState, setBtnState] = useState(false);
   let toggleClass = btnState ? "active" : "hide";
   const [errorState, setErrorState] = useState(false);
@@ -40,23 +43,15 @@ const PaymentDataForm = (toggleClassCheck) => {
   const [checkoutToggle, setCheckoutToggle] = useState(true);
   let toggleCheckout = checkoutToggle ? "active" : "hide";
 
+  /* Creating the state orderId where the content of the order will be stored */
   const [orderId, setOrderId] = useState("");
   const [showSummary, setShowSummary] = useState(false);
 
-  /*   const MySwal = withReactContent(Swal) */
+
 
   const showPayment = (e) => {
-    if (
-      name &&
-      email &&
-      idNumber &&
-      phoneNumber &&
-      postalCode &&
-      city &&
-      state &&
-      street &&
-      houseNumber !== ""
-    ) {
+    /* if for validate the inputs */
+    if ( name && email && idNumber && phoneNumber && postalCode && city && state && street && houseNumber !== "") {
       setBtnState((btnState) => !btnState);
       setErrorState(false);
       setCheckoutToggle(false);
@@ -71,12 +66,7 @@ const PaymentDataForm = (toggleClassCheck) => {
   };
 
   const finishPayment = (e) => {
-    if (
-      cardName !== "" &&
-      number.length === 16 &&
-      cvc.length === 3 &&
-      expiry.length === 4
-    ) {
+    if ( cardName !== "" && number.length === 16 && cvc.length === 3 && expiry.length === 4) {
       uploadOrderToFirebase();
       setShowSummary(true);
       window.scroll({
@@ -88,12 +78,7 @@ const PaymentDataForm = (toggleClassCheck) => {
     }
   };
 
-  const uploadOrderToFirebase = () => {
-    const db = getFirestore();
-    const ordersCollection = collection(db, "orders");
-    addDoc(ordersCollection, orderData).then(({ id }) => setOrderId(id));
-  };
-
+  /* Object where it is stored the data of the inputs */
   let orderData = {
     buyerData: {
       name,
@@ -125,11 +110,14 @@ const PaymentDataForm = (toggleClassCheck) => {
     date: serverTimestamp(),
   };
 
-  if (showSummary) {
-    return <PucharseSummary orderId={orderId} />;
-  }
-  
-  
+
+/* Function to upload the data to firebase */
+  const uploadOrderToFirebase = () => {
+    const db = getFirestore();
+    const ordersCollection = collection(db, "orders");
+    addDoc(ordersCollection, orderData).then(({ id }) => setOrderId(id));
+  };
+
   AOS.init({
     // initialise with other settings
     duration : 1000,
@@ -137,6 +125,10 @@ const PaymentDataForm = (toggleClassCheck) => {
     once:true,
   });
 
+/* this it will be true when we click on finishPayment */
+  if (showSummary) {
+    return <PucharseSummary orderId={orderId} />;
+  }
   return (
     <div className="paymentForms">
       <div className={`personalDataFrom ${toggleClassCheck.show}`}data-aos="fade-down">

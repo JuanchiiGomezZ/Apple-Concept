@@ -2,10 +2,14 @@ import React from "react";
 import Loading from "../../../utils/Loading";
 import { useCartContext } from "./CartContext";
 import Swal from 'sweetalert2'
+
+
+
 const PucharseSummary = ({order}) => {
   const { clearCart } = useCartContext();
 
   const payBtn = () =>{
+    /* Sweet alert to show a message after pay */
     Swal.fire({
       icon:'success',
       title:'Your order has been accepted!',
@@ -14,6 +18,7 @@ const PucharseSummary = ({order}) => {
     .then(clearCart)
   }
 
+/* if still the order didnt arrive from the data base  */
   if(order.id !== undefined){
     return(   
       <div className="pucharseInformation">

@@ -29,7 +29,7 @@ const NavBar = () => {
   );
 };
 
-
+/* Scroll in the middle of the screen to go to Categories */
 const scrollCategoriesOnClick = () => {
   window.scroll({
     top: 650,

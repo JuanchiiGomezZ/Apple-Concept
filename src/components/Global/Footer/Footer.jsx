@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 
 const Footer = () => {
+
+  /* Making responsive the footer adding the function  */
   const [showShop, setShowShop] = useState(false);
   let toggleShowShop = showShop ? "active" : "hide2";
-
   const [showServices, setShowServices] = useState(false);
   let toggleShowServices = showServices ? "active" : "hide2";
-
   const [showStore, setShowStore] = useState(false);
   let toggleShowStore = showStore ? "active" : "hide2";
-
   const [showBusiness, setShowBusiness] = useState(false);
   let toggleShowBusiness = showBusiness ? "active" : "hide2";
-
   const [showValue, setShowValue] = useState(false);
   let toggleShowValue = showValue ? "active" : "hide2";
+
+
 
   return (
     <footer>

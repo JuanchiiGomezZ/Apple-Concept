@@ -3,6 +3,7 @@ import shoppingBag from "../../../assets/images/shopping-bag.png";
 import { useCartContext } from "../Cart/CartContext";
 
 const CartWidget = () => {
+  /* calling the total from the carContext */
   const { totalProducts } = useCartContext();
 
   return (
@@ -17,7 +18,7 @@ const CartWidget = () => {
   );
 };  
 
-
+/* Open and close cart */
 const openCart = () => {
   const cartContainer = document.getElementById("cart");
   if (cartContainer.classList.contains("hidden")) {

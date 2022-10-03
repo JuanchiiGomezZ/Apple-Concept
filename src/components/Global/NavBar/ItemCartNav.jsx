@@ -1,8 +1,11 @@
 import React from "react";
 import { useCartContext } from "../Cart/CartContext";
 
+
+
 const ItemCartNav = () => {
   const { cart } = useCartContext();
+  /* if cart is empty render: */
   if (cart.length === 0) {
     return (
       <>
