@@ -15,6 +15,10 @@ const ItemDetail = ({ data }) => {
   const [selectedColor, setSelectedColor] = useState("")
 
 
+  const [showItemCount, setShowItemCount] = useState(false);
+
+
+
   const onAdd = (quantity) => {
     setGoToCart(true);
     addProductToCart(data, quantity, selectedStorage, selectedColor);
@@ -23,11 +27,18 @@ const ItemDetail = ({ data }) => {
   const clickStorage = (e, a) =>{
     setSelectedStorage(a)
     e.currentTarget.classList.toggle('active');
+    if( selectedColor !== ""){
+      setShowItemCount(true);
+  }
   }
   
   const clickColor = (e, a) =>{
     setSelectedColor(a)
     e.currentTarget.classList.toggle('active');
+    if( selectedStorage !== ""){
+      setShowItemCount(true);
+  }
+
   }
 
 
@@ -121,7 +132,9 @@ const ItemDetail = ({ data }) => {
           {
               goToCart 
               ? <Link to="/Cart" className="checkOut" href="##">Checkout</Link>
-              : <> <ItemCount itemStock={data.stock} onAdd={onAdd}/></>
+              : showItemCount 
+                ? <><ItemCount itemStock={data.stock} onAdd={onAdd}/></>
+                : <div></div>
             }
         </div>
       </div>
