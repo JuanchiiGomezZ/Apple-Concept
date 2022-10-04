@@ -7,9 +7,10 @@ import PaymentForm from "./PaymentDataForm";
 
 
 const Cart = () => {
+  /* hide the btn and show the form after u continue to pay */
   const [btnState, setBtnState] = useState(false);
   const showForm = () => {
-    setBtnState((btnState) => !btnState);
+    setBtnState(true);
     setCheckoutToggle(false);
     window.scroll({
       top: 2500,

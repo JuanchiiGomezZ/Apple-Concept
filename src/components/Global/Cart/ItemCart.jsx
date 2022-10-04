@@ -5,7 +5,7 @@ import { useCartContext } from "./CartContext";
 const ItemCart = ({ product }) => {
   const { removeProduct } = useCartContext();
 
-  
+
   const [appleCare, setAppleCare] = useState(0);
   const [showAppleCare, setShowAppleCare] = useState(false);
 

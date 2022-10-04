@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { useContext } from "react";
 
+/* Creating the context */
 const CartContext = React.createContext([]);
 export const useCartContext = () => useContext(CartContext);
 
 const CartContextProvider = ({ children }) => {
+  /* localStorage for cart */
   const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart") || "[]");
+  /* Cart state */
   const [cart, setCart] = useState(cartFromLocalStorage);
+  /* Storing on localstorage */
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
+  /* function to send the product to cart */
   const addProductToCart = (item, quantity, selectedStorage, selectedColor) => {
+    /* Check if there are already something equal than the product u have choosen */
     if (isInCart(item.id, selectedColor, selectedStorage)) {
-      /* if (areThereStock2(item.stock, quantity)) { */
+      /* check if there are stock */
         if (areThereStock(item.stock)) {
           setCart(
             cart.map((product) => {
-              return product.id === item.id &&
-                product.selectedColor === selectedColor &&
-                product.selectedStorage === selectedStorage
+              /* accumulates the quantity if you want to enter another equal product */
+              return product.id === item.id && product.selectedColor === selectedColor && product.selectedStorage === selectedStorage
                 ? { ...product, quantity: product.quantity + quantity }
                 : product;
             })
@@ -26,9 +31,7 @@ const CartContextProvider = ({ children }) => {
         } else {
           alert("No hay stock");
         }
-/*       }else{
-        alert("No hay stock");
-      } */
+  /* if there is not something on cart, it is created */
     } else {
       setCart([
         ...cart,
@@ -42,9 +45,12 @@ const CartContextProvider = ({ children }) => {
     }
   };
 
+
   const clearCart = () => setCart([]);
 
+  
   const isInCart = (id, selectedColor, selectedStorage) => {
+    /* check  */
     return cart.find(
       (product) =>
         product.id === id &&
@@ -54,18 +60,8 @@ const CartContextProvider = ({ children }) => {
       ? true
       : false;
   };
-  const isInCart2 = (selectedColor, selectedStorage) => {
-    return cart.find(
-      (product) =>
-        product.selectedColor === selectedColor &&
-        product.selectedStorage === selectedStorage
-    )
-      ? true
-      : false;
-  };
 
-  /* const areThereStock2 = (stock, counter) =>
-    cart.find((product) => stock - product.quantity >= counter) ? true : false; */
+
   const areThereStock = (stock) =>
     cart.find((product) => stock > product.quantity) ? true : false;
 
@@ -80,7 +76,7 @@ const CartContextProvider = ({ children }) => {
       )
     );
   };
-
+/* calculates the total price of the order */
   const totalPrice = () => {
     return cart.reduce(
       (prev, act) => (prev + act.quantity * act.price) * 1.1,
@@ -88,6 +84,7 @@ const CartContextProvider = ({ children }) => {
     );
   };
 
+/* calculates the number of products there are in cart */
   const totalProducts = () =>
     cart.reduce(
       (acumulador, productoActual) => acumulador + productoActual.quantity,
@@ -99,13 +96,11 @@ const CartContextProvider = ({ children }) => {
       value={{
         clearCart,
         isInCart,
-        isInCart2,
         removeProduct,
         addProductToCart,
         totalPrice,
         totalProducts,
         areThereStock,
-/*         areThereStock2, */
         cart,
       }}
     >
