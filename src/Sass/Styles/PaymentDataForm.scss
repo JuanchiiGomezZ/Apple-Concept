@@ -85,7 +85,6 @@ input::-webkit-inner-spin-button {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: 30px;
       }
 
       input {
@@ -139,7 +138,7 @@ input::-webkit-inner-spin-button {
     }
     .dataPaymentForm{
       input{
-        width: 90%;
+        width: 90% !important;
       }
 
     }

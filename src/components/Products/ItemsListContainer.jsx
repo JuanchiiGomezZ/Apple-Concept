@@ -8,7 +8,9 @@ import BannersIphone from './Banners/BannersIphone';
 import BannersMac from "./Banners/BannersMac";
 import BannerIpad from './Banners/BannerIpad';
 import ServicesBanner from "./Banners/ServicesBanner";
-import {getFirestore, where, collection, getDocs, query } from 'firebase/firestore'
+import { where, collection, getDocs, query } from 'firebase/firestore'
+import {db} from '../../utils/firebaseConfig'
+
 
 const ItemsListContainer = () => {
   const [data, setData] = useState([]);
@@ -17,8 +19,7 @@ const ItemsListContainer = () => {
   
   useEffect(() => {
     setIsLoading(true);
-    const querydb = getFirestore();
-    const queryCollection = collection(querydb, 'productsApple');
+    const queryCollection = collection(db, 'productsApple');
     if (categoryId) {
         const queryFilter = query(queryCollection, where('category', '==', categoryId));
         getDocs(queryFilter)

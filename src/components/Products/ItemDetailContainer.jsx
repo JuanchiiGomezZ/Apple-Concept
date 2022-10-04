@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import Loading from "../../utils/Loading";
-import { getDoc, getFirestore, doc } from "firebase/firestore";
-
+import { getDoc, doc } from "firebase/firestore";
+import {db} from '../../utils/firebaseConfig'
 
 const ItemDetailContainer = () => {
   const [data, setData] = useState({});
@@ -11,8 +11,7 @@ const ItemDetailContainer = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const querydb = getFirestore();
-    const queryDoc = doc(querydb, "productsApple", productId);
+    const queryDoc = doc(db, "productsApple", productId);
     getDoc(queryDoc).then((res) =>
       setData({ id: res.id, ...res.data(setIsLoading(false)) })
     );

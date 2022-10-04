@@ -1,14 +1,13 @@
 import React, { useState /* useEffect */ } from "react";
-import Cards from "react-credit-cards";
 import { useCartContext } from "./CartContext";
 import {
   addDoc,
   collection,
-  getFirestore,
   serverTimestamp,
 } from "firebase/firestore";
 import PucharseSummary from "./PucharseSummaryContainer";
 import AOS from 'aos';
+import {db} from '../../../utils/firebaseConfig'
 
 
 const PaymentDataForm = (toggleClassCheck) => {
@@ -20,7 +19,6 @@ const PaymentDataForm = (toggleClassCheck) => {
   const [cardName, setCardName] = useState("");
   const [expiry, setExpiry] = useState("");
   const [cvc, setCvc] = useState("");
-  const [focus, setFocus] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [idNumber, setIdNumber] = useState("");
@@ -113,7 +111,6 @@ const PaymentDataForm = (toggleClassCheck) => {
 
 /* Function to upload the data to firebase */
   const uploadOrderToFirebase = () => {
-    const db = getFirestore();
     const ordersCollection = collection(db, "orders");
     addDoc(ordersCollection, orderData).then(({ id }) => setOrderId(id));
   };
@@ -216,13 +213,6 @@ const PaymentDataForm = (toggleClassCheck) => {
       </div>
       <div className={`dataPaymentForm ${toggleClass}`}data-aos="fade-down">
         <h1>Payment Information.</h1>
-        <Cards
-          number={number}
-          name={cardName}
-          expiry={expiry}
-          cvc={cvc}
-          focused={focus}
-        />
         <div className="dataForms">
           <form>
             <input
@@ -232,7 +222,7 @@ const PaymentDataForm = (toggleClassCheck) => {
               maxLength={16}
               value={number}
               onChange={(e) => setNumber(e.target.value)}
-              onFocus={(e) => setFocus(e.target.name)}
+              
             />
             <input
               type="text"
@@ -241,7 +231,7 @@ const PaymentDataForm = (toggleClassCheck) => {
               maxLength={35}
               value={cardName}
               onChange={(e) => setCardName(e.target.value)}
-              onFocus={(e) => setFocus(e.target.name)}
+              
             />
             <input
               type="tel"
@@ -250,7 +240,7 @@ const PaymentDataForm = (toggleClassCheck) => {
               maxLength={4}
               value={expiry}
               onChange={(e) => setExpiry(e.target.value)}
-              onFocus={(e) => setFocus(e.target.name)}
+              
             />
             <input
               type="tel"
@@ -259,7 +249,7 @@ const PaymentDataForm = (toggleClassCheck) => {
               maxLength={3}
               value={cvc}
               onChange={(e) => setCvc(e.target.value)}
-              onFocus={(e) => setFocus(e.target.name)}
+              
             />
             <div className={`dataIsMissing ${toggleError2}`}>
               <i className="fa-solid fa-triangle-exclamation"></i>
