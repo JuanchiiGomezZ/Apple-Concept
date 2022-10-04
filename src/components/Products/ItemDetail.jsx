@@ -7,6 +7,8 @@ import FeaturesIphone from "./Features/FeaturesIphone";
 import FeaturesMac from './Features/FeaturesMac';
 import FeaturesIpad from "./Features/FeaturesIpad";
 
+
+
 const ItemDetail = ({ data }) => {
 
   const [goToCart, setGoToCart] = useState(false);
@@ -15,6 +17,7 @@ const ItemDetail = ({ data }) => {
   const [selectedColor, setSelectedColor] = useState("")
 
 
+  /* Force the user chose color & storage*/
   const [showItemCount, setShowItemCount] = useState(false);
 
 
@@ -26,7 +29,9 @@ const ItemDetail = ({ data }) => {
 
   const clickStorage = (e, a) =>{
     setSelectedStorage(a)
+    /* Gives a class to what to click  */
     e.currentTarget.classList.toggle('active');
+    /* Check if the user chose color */
     if( selectedColor !== ""){
       setShowItemCount(true);
   }
@@ -34,14 +39,16 @@ const ItemDetail = ({ data }) => {
   
   const clickColor = (e, a) =>{
     setSelectedColor(a)
+    /* Gives a class to what to click */
     e.currentTarget.classList.toggle('active');
+    /* Check if the user chose storage */
     if( selectedStorage !== ""){
       setShowItemCount(true);
   }
-
   }
 
 
+  /*Check the category of the product to return his features  */
   const featuresSelector = () =>{
     if(data.category === 'iPhone'){
      return <FeaturesIphone data={data} />  
@@ -52,8 +59,6 @@ const ItemDetail = ({ data }) => {
     else if(data.category === 'iPad'){
       return <FeaturesIpad data={data} />
     }
-
-
   }
 
   return (

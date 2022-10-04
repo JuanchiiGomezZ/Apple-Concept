@@ -1,0 +1,13 @@
+Make the inputs expiry and CVC  one next to the other
+Create 
+
+IDEAS
+ADMIN PAGE
+where u have to log in -> Log in & register page.
+U will can upload products, modify existing one.
+
+USERS PROFILE
+They have to register his account
+This will store his information like personal, shipping and payment
+Fav products
+

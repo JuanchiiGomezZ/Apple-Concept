@@ -124,6 +124,9 @@ input::-webkit-inner-spin-button {
 .rccs__expiry__valid{
   padding: 5px;
 }
+.rccs__card{
+  overflow: hidden;
+}
 
 @media (max-width: 900px) {
   .paymentForms{
@@ -133,6 +136,12 @@ input::-webkit-inner-spin-button {
         grid-template-columns: repeat(2, 1fr) !important;
         
       }
+    }
+    .dataPaymentForm{
+      input{
+        width: 90%;
+      }
+
     }
   }
 }
