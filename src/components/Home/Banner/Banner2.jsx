@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 const Banner2 = () => {
   return (
@@ -8,7 +10,7 @@ const Banner2 = () => {
           <h2>iPhone 13 Pro</h2>
           <p>Oh. So. Pro.</p>
           <a href="##">Learn More</a>
-          <a href="##">Buy</a>
+          <Link to="/Shop/iPhone/4">Buy</Link>
         </div>
         <img
           src="https://i.postimg.cc/66L1L1yS/iphone13-Square.png"
@@ -33,7 +35,7 @@ const Banner2 = () => {
           <h2 className="ipadAir">Air</h2>
           <p>Light. Bright. Full of might.</p>
           <a href="##">Learn More</a>
-          <a href="##">Buy</a>
+          <Link to="/Shop/iPad/20">Buy</Link>
         </div>
         <img
           src="https://www.apple.com/v/ipad-air/r/images/overview/features/iris__fnhnshkpwl6y_large.jpg"

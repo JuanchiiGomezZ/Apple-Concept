@@ -16,7 +16,7 @@ const Banner = () => {
           </div>
           <div className="loveThe"></div>
 
-          <Link to="/Shop/iPhone/303" id="iPhoneSEButton">
+          <Link to="/Shop/iPhone/8" id="iPhoneSEButton">
             Buy
           </Link>
         </div>

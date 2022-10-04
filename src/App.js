@@ -11,7 +11,6 @@ import ItemsListContainer from "./components/Products/ItemsListContainer";
 import Cart from "./components/Global/Cart/Cart";
 import CartProvider from "./components/Global/Cart/CartContext";
 
-import './utils/firebaseConfig'
 
 const App = () => {
   return (
