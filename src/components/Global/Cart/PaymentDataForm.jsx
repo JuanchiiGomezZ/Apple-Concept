@@ -7,7 +7,7 @@ import {
 } from "firebase/firestore";
 import PucharseSummary from "./PucharseSummaryContainer";
 import AOS from 'aos';
-import {db} from '../../../utils/firebaseConfig'
+import {db} from '../../../firebaseConfig'
 
 
 const PaymentDataForm = (toggleClassCheck) => {

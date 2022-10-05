@@ -9,7 +9,7 @@ import BannersMac from "./Banners/BannersMac";
 import BannerIpad from './Banners/BannerIpad';
 import ServicesBanner from "./Banners/ServicesBanner";
 import { where, collection, getDocs, query } from 'firebase/firestore';
-import {db} from '../../utils/firebaseConfig';
+import {db} from '../../firebaseConfig';
 
 
 const ItemsListContainer = () => {
