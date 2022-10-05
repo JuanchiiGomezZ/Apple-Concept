@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import helper from "../../assets/images/iphone/Helper.jpg";
 import { Link } from "react-router-dom";
-import ItemCount from '../Products/ItemCount/ItemCount'
+import ItemCount from './ItemCount'
 import {useCartContext} from '../Global/Cart/CartContext.jsx'
 import FeaturesIphone from "./Features/FeaturesIphone";
 import FeaturesMac from './Features/FeaturesMac';
 import FeaturesIpad from "./Features/FeaturesIpad";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 
 const ItemDetail = ({ data }) => {
@@ -64,7 +65,7 @@ const ItemDetail = ({ data }) => {
   return (
     <div className="iphoneDetail">
       <Link to={`/Shop/${data.category}`}  className="goBack">
-        <i className="fa-solid fa-angle-left"></i>
+        <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
         <p>Store</p>
       </Link>
       <div className="iphoneDetailHeading">

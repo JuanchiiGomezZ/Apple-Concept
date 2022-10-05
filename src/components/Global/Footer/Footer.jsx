@@ -113,7 +113,7 @@ const Footer = () => {
       <div className="flexColumn">
         <div className="copyright">
           <p>Copyright</p>
-          <i className="fa-regular fa-copyright"></i>
+          
         </div>
         <p>2022 Apple Inc. All rights reserved.</p>
       </div>

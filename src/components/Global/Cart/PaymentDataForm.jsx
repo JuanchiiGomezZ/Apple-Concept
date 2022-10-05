@@ -8,6 +8,8 @@ import {
 import PucharseSummary from "./PucharseSummaryContainer";
 import AOS from 'aos';
 import {db} from '../../../firebaseConfig'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
 
 
 const PaymentDataForm = (toggleClassCheck) => {
@@ -198,7 +200,7 @@ const PaymentDataForm = (toggleClassCheck) => {
               />
             </div>
             <div className={`dataIsMissing ${toggleError}`}>
-              <i className="fa-solid fa-triangle-exclamation"></i>
+            <FontAwesomeIcon icon={faTriangleExclamation}></FontAwesomeIcon>
               <p className="error">Error:</p>
               <p>Complete all the fields. </p>
             </div>
@@ -252,7 +254,7 @@ const PaymentDataForm = (toggleClassCheck) => {
               
             />
             <div className={`dataIsMissing ${toggleError2}`}>
-              <i className="fa-solid fa-triangle-exclamation"></i>
+            <FontAwesomeIcon icon={faTriangleExclamation}></FontAwesomeIcon>
               <p className="error">Error:</p>
               <p>Complete all the fields. </p>
             </div>

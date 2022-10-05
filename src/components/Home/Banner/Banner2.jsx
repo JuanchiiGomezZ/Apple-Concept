@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faApple} from "@fortawesome/free-brands-svg-icons";
 
 const Banner2 = () => {
   return (
@@ -20,7 +21,7 @@ const Banner2 = () => {
       <div className="sq2" href="##">
         <div className="sq2Text">
           <div className="sq2Title">
-            <i className="fa-brands fa-apple"></i>
+            <FontAwesomeIcon icon={faApple}></FontAwesomeIcon>
             <h2>Watch</h2>
           </div>
           <p className="watchSeries">SERIES 8</p>
@@ -45,7 +46,7 @@ const Banner2 = () => {
       <div className="sq4" href="##">
         <div className="sq4Text">
           <div className="titleWatch">
-            <i className="fa-brands fa-apple"></i>
+            <FontAwesomeIcon icon={faApple}></FontAwesomeIcon>
             <h2>Watch</h2>
             <h2 className="watchSE">SE</h2>
           </div>

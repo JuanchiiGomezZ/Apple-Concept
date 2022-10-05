@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import { useCartContext } from "./CartContext";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlane, faBox, faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import {faApple} from "@fortawesome/free-brands-svg-icons"
 
 const ItemCart = ({ product }) => {
   const { removeProduct } = useCartContext();
@@ -59,7 +61,7 @@ const ItemCart = ({ product }) => {
           <div className="appleCare">
             <div className="appleCareHead">
               <div className="appleCareTitle">
-                <i className="fa-brands fa-apple"></i>
+              <FontAwesomeIcon icon={faApple}></FontAwesomeIcon>
                 
                 <p>Apple Care for ${Math.round(product.price * 0.15)}</p>
               </div>
@@ -80,16 +82,16 @@ const ItemCart = ({ product }) => {
           <div className="hLine"></div>
           <div className="shipping">
             <div className="shippingTitle">
-              <i className="fa-solid fa-plane"></i>
+              <FontAwesomeIcon icon={faPlane}></FontAwesomeIcon>
               <p>Shipping</p>
             </div>
             <div className="shippingDescription">
               <div className="shippingWay">
-                <i className="fa-solid fa-box"></i>
+              <FontAwesomeIcon icon={faBox}></FontAwesomeIcon>
                 <p>In stock and ready to ship</p>
               </div>
               <div className="shippingWay">
-                <i className="fa-solid fa-bag-shopping"></i>
+              <FontAwesomeIcon icon={faBagShopping}></FontAwesomeIcon>
                 <p>Pick up at an Apple Store near you.</p>
               </div>
             </div>

@@ -2,14 +2,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
 import scrollTopOnClick from "../../../utils/scrollTopOnClick";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faApple} from "@fortawesome/free-brands-svg-icons"
 
 
 const NavBar = () => {
   return (
     <header>
       <div className="nav">
-        <NavLink to="/" onClick={scrollTopOnClick}><i className="fa-brands fa-apple"></i></NavLink>
+        <NavLink to="/" onClick={scrollTopOnClick}><FontAwesomeIcon icon={faApple}></FontAwesomeIcon></NavLink>
         <div className="headerSections">
           <div className="sections">
             <NavLink to="/">Home</NavLink>
