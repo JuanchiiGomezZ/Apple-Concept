@@ -81,7 +81,7 @@ const ItemDetail = ({ data }) => {
           <img src={helper} alt="" />
           <div className="helpText">
             <p>Need shopping help?</p>
-            <a href="##">Ask an iPhone Specialist</a>
+            <a href="##">Ask an iPhone Specialist.</a>
           </div>
         </div>
       </div>
