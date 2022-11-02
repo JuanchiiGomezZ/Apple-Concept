@@ -7,6 +7,7 @@
 - Sass
 - JavaScript
 - React
+- Firebase
 - Git
 - GitHub
 
